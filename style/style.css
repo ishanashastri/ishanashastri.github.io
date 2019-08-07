@@ -6,6 +6,7 @@ html{
 }
 body{
     background-image: url("../images/wvpic.jpg");
+    background-size: cover;
     background-color: white;
 }
 
@@ -18,6 +19,7 @@ h1{
 p{
     font-size: 100%;
 }
+
 .image-cropper {
     width: 100px;
     height: 100px;
@@ -25,12 +27,15 @@ p{
     overflow: hidden;
     border-radius: 50%;
 }
+
 .profile-pic {
+    object-fit: cover;
     display: inline;
     margin: 0 auto;
     height: 100%;
     width: auto;
 }
+
 .topnav {
   overflow: hidden;
 }
