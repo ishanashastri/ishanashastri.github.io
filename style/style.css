@@ -4,6 +4,10 @@ html{
     color: black;
     text-align: center;
 }
+body{
+    background-image: url("../images/wvpic.jpg");
+    background-color: white;
+}
 
 h1{
     font-family: 'Courier New', Courier, monospace;
