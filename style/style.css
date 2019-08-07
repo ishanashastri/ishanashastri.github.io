@@ -1,17 +1,19 @@
 html{
-    background-color: black;
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 h1{
-    color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100%; 
-    text-align: center;  
+    font-size: 400%; 
+    text-align: center;
 }
 
+p{
+    font-size: 100%;
+}
 .image-cropper {
     width: 100px;
     height: 100px;
@@ -24,4 +26,30 @@ h1{
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: gray;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: gray;
+  color: white;
 }
