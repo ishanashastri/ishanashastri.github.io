@@ -8,8 +8,8 @@ body{
     background-image: url("../images/wvpic.jpg");
     background-size: cover;
     background-color: white;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
 }
 
 h1{
