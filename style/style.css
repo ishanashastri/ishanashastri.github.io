@@ -5,13 +5,16 @@ html{
     text-align: center;
 }
 body{
-    background-image: url("../images/wvpic.jpg");
-    background-size: cover;
     background-color: white;
-    /* filter: blur(8px); */
-    /* -webkit-filter: blur(8px); */
 }
 
+bg-image{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-image: url("../images/wvpic.jpg");
+    background-size: cover;
+}
+    
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 400%; 
@@ -39,30 +42,30 @@ p{
 }
 
 .topnav {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  color: gray;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: gray;
-  color: white;
+    background-color: gray;
+    color: white;
 }
 
 .social {
