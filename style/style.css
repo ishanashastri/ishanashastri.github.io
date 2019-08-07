@@ -8,6 +8,8 @@ body{
     background-image: url("../images/wvpic.jpg");
     background-size: cover;
     background-color: white;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 h1{
@@ -61,4 +63,45 @@ p{
 .topnav a.active {
   background-color: gray;
   color: white;
+}
+
+.social {
+    margin: 30px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #aaa;
+    overflow: hidden;
+}
+.social a {
+    color: inherit;
+    text-decoration: none;
+}
+.social i {
+    margin: 0.3em;
+    cursor: pointer;
+    transition: color 300ms ease, transform 300ms ease;
+    transform: translateZ(0);
+}
+.social i:hover {
+    margin-top: -1px;
+}
+.social i#twitter:hover {
+    transform: translate(0, -15px);
+    color: #1da1f2;
+}
+.social i#github:hover {
+    transform: translate(0, -15px);
+    color: #000000;
+}
+.social i#reddit:hover {
+    transform: translate(0, -15px);
+    color: #ff4500;
+}
+.social i#instagram:hover {
+    transform: translate(0, -15px);
+    color: #3b5998;
+}
+.social i#mail:hover {
+    transform: translate(0, -15px);
+    color: #d14836;
 }
