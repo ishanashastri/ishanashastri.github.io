@@ -9,6 +9,7 @@ body{
 }
 
 bg-image{
+    height: 100%;
     filter: blur(8px);
     -webkit-filter: blur(8px);
     background-image: url("../images/wvpic.jpg");
@@ -31,6 +32,12 @@ p{
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.center-justify{
+    text-align: justify;
+    margin: 0 auto;
+    width: 30em;
 }
 
 .profile-pic {
