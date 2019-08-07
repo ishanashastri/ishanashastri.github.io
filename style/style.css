@@ -83,34 +83,40 @@ p{
     color: white;
     font-size: 70px;
     width: 70px;
+    height: 70px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
 }
 .fa-twitter:hover {
     transform: translate(0, -15px);
-    color: #1da1f2;
+    background: #1da1f2;
+    color: white;
 }
 .fa-github:hover {
     transform: translate(0, -15px);
-    color: #000000;
+    background: #F4CBB2;
+    color: white;
 }
 .fa-reddit:hover {
     transform: translate(0, -15px);
-    color: #ff4500;
+    background: #ff4500;
+    color: white;
 }
 .fa-instagram:hover {
     transform: translate(0, -15px);
-    color: #3b5998;
+    background: #3b5998;
+    color: white;
 }
-.fa-mail:hover {
+.fa-google:hover {
     transform: translate(0, -15px);
-    color: #d14836;
+    background: #d14836;
+    color: white;
 }
 
 /* DROPDOWN MENU */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: gray;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -152,18 +158,8 @@ p{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: darkblue;
   }
-  </style>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
 
 
 
@@ -199,6 +195,7 @@ p{
     font-weight: bold;
     font-size: 60px;
     border: 10px solid #f1f1f1;
+    box-sizing: border-box;
     position: fixed; /* Stay fixed */
     top: 50%;
     left: 50%;
