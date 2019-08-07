@@ -1,5 +1,8 @@
-head{
+html{
     background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
 }
 
 h1{
