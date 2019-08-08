@@ -59,6 +59,10 @@ p{
     width: auto;
 }
 
+
+
+
+
 /* OLD NAVBAR */
 .topnav {
     overflow: hidden;
@@ -86,6 +90,9 @@ p{
     background-color: gray;
     color: white;
 }
+
+
+
 
 /* SOCIAL MEDIA ICONS */
 .fa {
@@ -125,6 +132,10 @@ p{
 .fa-bars:hover{
   color: black;
 }
+
+
+
+
 /* DROPDOWN MENU */
 .dropbtn {
     background-color: white;
@@ -137,7 +148,6 @@ p{
 
   }
   
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: absolute;
     top: 40px;
@@ -145,7 +155,6 @@ p{
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: relative;
@@ -155,7 +164,6 @@ p{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -163,15 +171,12 @@ p{
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #f1f1f1}
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     color: gray;
   }
@@ -179,22 +184,16 @@ p{
 
 
   /* SCROLLING BACKGROUND */
-
-  /* * {
-    box-sizing: border-box;
-  } */
   
   .bg-image {
-    /* Full height */
     height: 50%; 
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-filter: brightness(50%); 
+    filter: brightness(50%);
   }
-  
-  /* Images used */
+
   .img1 { background-image: url("../images/nac.jpg"); }
   .img2 { background-image: url("../images/outreach.JPG"); }
   .img3 { background-image: url("../images/wvpic.jpg"); }
@@ -202,14 +201,13 @@ p{
   .img5 { background-image: url("../images/worlds.JPG"); }
   .img6 { background-image: url("../images/iroc.JPG"); }
   
-  /* Position text in the middle of the page/image */
   .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
     font-weight: bold;
     font-size: 60px;
-    border: 10px solid #f1f1f1;
+    border: 10px;
     box-sizing: border-box;
     position: fixed; /* Stay fixed */
     top: 50%;
@@ -221,10 +219,15 @@ p{
     text-align: center;
   }
 
-/* ---- reset ---- */
+  .about {
+      color: white;
+      font-size: 100%;
+  }
 
-/* ---- particles.js container ---- */
 
+
+
+/* PARTICLES */
 #particles-js {
   position: absolute;
   width: 100%;
