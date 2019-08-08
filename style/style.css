@@ -150,7 +150,7 @@ p{
 
 /* DROPDOWN MENU */
 .dropbtn {
-    background-color: white;
+    background-color: transparent;
     position: relative;
     color: black;
     padding: 5px;
@@ -183,8 +183,8 @@ p{
     text-decoration: none;
     display: block;
   }
-  .about{
-      color:white;
+  .about:hover .dropbtn{
+      color: white;
   }
   .dropdown-content a:hover {background-color: #f1f1f1}
   
