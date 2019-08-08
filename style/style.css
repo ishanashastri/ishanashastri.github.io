@@ -137,14 +137,14 @@ p{
     color: white;
 }
 
-.fa-ellipsis-v{
+.fa-ellipsis-v::before{
   background: transparent;
   color: gray;
 }
-.fa-ellipsis-v:hover{
+.fa-ellipsis-v:hover::before{
   color: black;
 }
-.about:hover{
+.about:hover::before{
     color: white;
 }
 
