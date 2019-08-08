@@ -59,7 +59,7 @@ p{
     width: auto;
 }
 .bg-home {
-    color: white;
+    color: #0f1d87;
     font-weight: bold;
     font-size: 100px;
     position: fixed;
@@ -182,7 +182,9 @@ p{
     text-decoration: none;
     display: block;
   }
-  
+  .about{
+      color:white;
+  }
   .dropdown-content a:hover {background-color: #f1f1f1}
   
   .dropdown:hover .dropdown-content {
@@ -207,12 +209,12 @@ p{
     filter: brightness(50%);
   }
 
-  .img1 { background-image: url("../images/nac.jpg"); }
-  .img2 { background-image: url("../images/outreach.JPG"); }
-  .img3 { background-image: url("../images/wvpic.jpg"); }
-  .img4 { background-image: url("../images/halliwells.JPG"); }
-  .img5 { background-image: url("../images/wv2.JPG"); }
-  .img6 { background-image: url("../images/iroc.JPG"); rotate: 90deg; }
+  .img1 { background-image: url("../../images/nac.jpg"); }
+  .img2 { background-image: url("../../images/outreach.JPG"); }
+  .img3 { background-image: url("../../images/wvpic.jpg"); }
+  .img4 { background-image: url("../../images/halliwells.JPG"); }
+  .img5 { background-image: url("../../images/wv2.JPG"); }
+  .img6 { background-image: url("../../images/iroc.JPG"); }
   
   .bg-h1 {
     color: white;
