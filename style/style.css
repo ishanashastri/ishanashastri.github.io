@@ -58,7 +58,19 @@ p{
     height: 100%;
     width: auto;
 }
-
+.bg-home {
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+  }
 
 
 
@@ -187,6 +199,7 @@ p{
   
   .bg-image {
     height: 50%; 
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,8 +211,8 @@ p{
   .img2 { background-image: url("../images/outreach.JPG"); }
   .img3 { background-image: url("../images/wvpic.jpg"); }
   .img4 { background-image: url("../images/halliwells.JPG"); }
-  .img5 { background-image: url("../images/worlds.JPG"); }
-  .img6 { background-image: url("../images/iroc.JPG"); }
+  .img5 { background-image: url("../images/wv2.JPG"); }
+  .img6 { background-image: url("../images/iroc.JPG"); rotate: 90deg; }
   
   .bg-h1 {
     color: white;
