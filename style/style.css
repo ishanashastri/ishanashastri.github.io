@@ -137,11 +137,11 @@ p{
     color: white;
 }
 
-.fa-bars{
+.fa-ellipsis-v{
   background: white;
   color: gray;
 }
-.fa-bars:hover{
+.fa-ellipsis-v:hover{
   color: black;
 }
 
