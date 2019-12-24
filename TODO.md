@@ -1,12 +1,14 @@
 # TODO
-- [] photography page
-- [] resume
-- [] articles page with blur on hover
-- [] add research/projects page
-- [] preview of pages on button hover for social media
-- [] gradient background
-- [] change background on hover to whatever the word is
-- [] sticky transparent hamburger menu
+- [ ] photography page
+- [x] resume
+- [ ] articles page with blur on hover
+- [ ] add research/projects page
+- [ ] preview of pages on button hover for social media
+- [ ] gradient background
+- [ ] change background on hover to whatever the word is
+- [x] sticky transparent hamburger menu
 - [x] kebab menu
-- [] kebab menu to hamburger on hover to sidebar on click
-- [] increase spacing between social media icons
+- [ ] stop menu from bugging
+- [ ] kebab menu to hamburger animation on hover to sidebar on click
+- [ ] increase spacing between social media icons
+- [ ] redo design // typing name/adjectives, more minimalistic

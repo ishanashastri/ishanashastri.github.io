@@ -18,14 +18,6 @@ html{
 body{
     background-color: white;
 }
-
-/* .bg-image{
-    height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    background-image: url("../images/wvpic.jpg");
-    background-size: cover;
-} */
     
 h1{
     font-family: 'lacuna', 'Courier New', sans-serif;
@@ -35,14 +27,6 @@ h1{
 
 p{
     font-size: 100%;
-}
-
-.image-cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
 }
 
 .center-justify{
@@ -124,8 +108,8 @@ p{
     background: #F4CBB2;
     color: white;
 }
-.fa-reddit:hover {
-    background: #ff4500;
+.fa-facebook:hover {
+    background: #0f1d87;
     color: white;
 }
 .fa-instagram:hover {
@@ -136,13 +120,15 @@ p{
     background: #d14836;
     color: white;
 }
-
+.fa-ellipsis-v {
+    background: transparent;
+}
 .fa-ellipsis-v::before{
-  background: transparent;
-  color: gray;
+    background: transparent;
+    color: gray;
 }
 .fa-ellipsis-v:hover::before{
-  color: black;
+    color: black;
 }
 .about:hover::before{
     color: white;
@@ -243,8 +229,8 @@ p{
     width: 300px;
     padding: 20px;
     text-align: justify;
-        margin: 0 auto;
-      width: 30em;
+    margin: 0 auto;
+    width: 30em;
   }
 
 
@@ -260,4 +246,51 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+
+/* PHOTO GRID */
+.header {
+    text-align: center;
+    padding: 32px;
+}
+  
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+  
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+}
+  
+.btn.active {
+    background-color: #666;
+    color: white;
 }
