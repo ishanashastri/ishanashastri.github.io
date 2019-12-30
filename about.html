@@ -2,98 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style/style2.css">
     <link rel="shortcut icon" type="image/icon" href="favicon/favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>about me</title>
-   
-   <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: "lacuna", 'Calibri', sans-serif;
-        }
-        .bg-image {
-            height: 50%; 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            -webkit-filter: brightness(50%); 
-            filter: brightness(50%);
-        }
-        .img1 { background-image: url("images/nac.jpg");}
-        .img2 { background-image: url("images/grad.jpg"); }
-        .img3 { background-image: url("images/wvpic.jpg"); }
-        .img4 { background-image: url("images/worlds.JPG"); }
-        .img5 { background-image: url("images/wv2.JPG"); }
-        .img6 { background-image: url("images/divya.JPG"); }
-        .img7 { background-image: url("images/isef.JPG"); }
-
-        .bg-h1 {
-            color: white;
-            font-weight: bold;
-            font-size: 80px;
-            position: fixed;
-            top: 15%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            padding: 20px;
-            text-align: center;
-            white-space: nowrap;
-        }
-        
-        .bg-p {
-            color: white;
-            font-size: 20px;
-            border: 10px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 300px;
-            padding: 20px;
-            text-align: justify;
-            margin: 0 auto;
-            width: 31em;
-        }
-      </style>
+    <title>ABOUT</title>
+    <script> 
+            $(function(){
+                $("#header").load("header.html"); 
+            });
+        </script> 
 </head>
 
 <body>
-    <!-- Navigation Hamburger Menu -->
-    <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-ellipsis-v about"></i></button>
-        <div class="dropdown-content">
-            <a href="/index.html">home</a>
-            <a href="/about.html">about</a>
-            <a href="/photos.html">photos</a>
-            <a href="/failure.html">failures</a>
-            <a href="/contact.html">contact</a>
-        </div>
-    </div>
-       
-    <div class="bg-h1">ishana shastri</div>
-  
-    <!-- SCROLLING BACKGROUND  -->
-    <div class="bg-image img1"></div>
-    <div class="bg-image img2"></div>
-    <div class="bg-image img3"></div>
-    <div class="bg-image img4"></div>
-    <div class="bg-image img5"></div>
-    <div class="bg-image img6"></div>
-    <div class="bg-image img7"></div>
+    <div id="header"></div>
 
-    <div class="bg-p">
+    <div class="home-name">ISHANA SHASTRI.</div>
+    <div class="home-sub">
+        ABOUT
+    </div>
+
+    <div class="bg-p"> 
         I am a <b>current freshman at the Massachusetts Institute of Technology</b>, with an intended 
-        major in Computer Science with a minor in Biomedical Engineering. A 2019 graduate from Poolesville 
-        High School's Science, Math, and Computer Science Program, I am interested in combining 
-        robotics and artificial intelligence to solve global healthcare issues. Outside of academics, 
-        I am a hobby enthusiast, meaning I'm always spotted learning new hobbies, from ukulele-ing to 
-        Rubik's cubing to skateboarding to even cultivating my mini cactus garden. I have also learned 
-        competitive classical piano and Bharatanatyam (Indian classical dance) for the past 14 years. 
-        Check out my <a href="/resume.pdf" style="color:white">resume</a> to see out what I've been working on recently.    
+        major in Computer Science with a minor in Mathematics.
+        
+        A 2019 graduate from Poolesville High School's Science, Math, and Computer Science magnet program,
+        I am interested in combining artificial intelligence to solve global healthcare issues. I am currently
+        interning at IBM Watson Ai, and have previously worked in AI for healthcare at Fondazione Bruno Kessler
+        in Trento, Italy and the George Washington University in Washington, D.C.
+        
+        Outside of academics, I am interested in investigating the intersection of art, media, and technology 
+        through mediums such as graphic design and fashion. I have also learned competitive classical piano and
+        Bharatanatyam (Indian classical dance) for the past 14 years. 
+
+        Check out my other pages to see out what I've been up to recently.    
     </div>
 </body>
 </html>

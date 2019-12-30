@@ -1,5 +1,5 @@
 html{
-    background-color: white;
+    background-color: #F8E08E;
     font-family: 'Roboto', 'Courier New', sans-serif;
     color: black;
     text-align: center;
@@ -7,8 +7,8 @@ html{
 /* CUSTOM FONT */
 @font-face {
     font-family: 'Roboto';
-    src: url('style/webfontkit/roboto-regular-webfont.ttf') format('ttf'),
-         url('style/webfontkit/roboto-regular-webfont.woff') format('woff');
+    src: url('/style/webfontkit/roboto-regular-webfont.ttf') format('ttf'),
+         url('/style/webfontkit/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,7 +25,7 @@ body{
     left: 78px;
     top: 55px;
 
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 33px;
@@ -68,11 +68,19 @@ body{
 
     color: #000000;
 }
-
-/* Rectangle 1 
-
-.header{
-
-}
-
-*/
+.bg-p {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    border: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: right;
+    margin: 0 auto;
+    width: 30em;
+  }
