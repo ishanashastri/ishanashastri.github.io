@@ -4,6 +4,14 @@ html{
     color: black;
     text-align: center;
 }
+/* CUSTOM FONT */
+@font-face {
+    font-family: 'Roboto';
+    src: url('style/webfontkit/roboto-regular-webfont.ttf') format('ttf'),
+         url('style/webfontkit/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     background-color: #F8E08E;
@@ -14,8 +22,8 @@ body{
     position: absolute;
     width: 317px;
     height: 35px;
-    left: 100px;
-    top: 73px;
+    left: 78px;
+    top: 55px;
 
     font-family: Roboto;
     font-style: normal;
@@ -26,7 +34,40 @@ body{
 
     color: #000000;
 }
+.home-sub{
+    position: absolute;
+    width: 291px;
+    height: 82px;
+    left: 79px;
+    top: 96px;
 
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.header{
+    position: absolute;
+    width: 131px;
+    height: 45px;
+    left: 1208px;
+    top: 532px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #000000;
+}
 
 /* Rectangle 1 
 
