@@ -2,7 +2,6 @@ html{
     background-color: #F8E08E;
     font-family: 'Roboto', 'Courier New', sans-serif;
     color: black;
-    text-align: center;
 }
 /* CUSTOM FONT */
 @font-face {
@@ -17,6 +16,13 @@ body{
     background-color: #F8E08E;
 }
 
+a{
+    color: black;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* Ishana Shastri */
 .home-name{
     position: absolute;
@@ -26,7 +32,7 @@ body{
     top: 55px;
 
     font-family: 'Roboto';
-    font-style: normal;
+    font-style: normal ;
     font-weight: bold;
     font-size: 33px;
     line-height: 39px;
@@ -72,7 +78,7 @@ body{
 .bg-p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: ;
+    font-size: 22px;
     border: 10px;
     position: fixed;
     width: 131px;
