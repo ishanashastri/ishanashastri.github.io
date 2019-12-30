@@ -47,6 +47,7 @@ body{
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
+    text-align: left;
 
     color: #000000;
 }
@@ -71,12 +72,13 @@ body{
 .bg-p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
+    font-size: ;
     border: 10px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 131px;
+    height: 100px;
+    left: 1208px;
+    top: 200px;
     z-index: 2;
     width: 300px;
     padding: 20px;
