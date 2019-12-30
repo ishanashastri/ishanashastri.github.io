@@ -1,0 +1,37 @@
+html{
+    background-color: white;
+    font-family: 'Roboto', 'Courier New', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+body{
+    background-color: #F8E08E;
+}
+
+/* Ishana Shastri */
+.home-name{
+    position: absolute;
+    width: 317px;
+    height: 35px;
+    left: 100px;
+    top: 73px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 39px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+
+/* Rectangle 1 
+
+.header{
+
+}
+
+*/
