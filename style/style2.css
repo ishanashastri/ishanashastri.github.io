@@ -61,12 +61,12 @@ a{
 }
 
 /* massachusetts institute of technology cs + math ‘23 */
-.center{
+.center-c, .center-s{
     position: absolute;
     width: 651px;
     height: 347px;
 
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
