@@ -2,6 +2,7 @@ html{
     background-color: #F8E08E;
     font-family: 'Roboto', 'Courier New', sans-serif;
     color: black;
+    height: 100%;
 }
 /* CUSTOM FONT */
 @font-face {
@@ -14,6 +15,7 @@ html{
 
 body{
     background-color: #F8E08E;
+    height: 100%;
 }
 
 a{
@@ -25,27 +27,27 @@ a{
 
 /* Ishana Shastri */
 .home-name{
-    position: absolute;
-    width: 317px;
-    height: 35px;
-    left: 78px;
-    top: 55px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 10%;
+    top: 30px;
 
     font-family: 'Roboto';
-    font-style: normal ;
+    font-style: normal;
     font-weight: bold;
-    font-size: 33px;
-    line-height: 39px;
+    font-size: 200%;
+    line-height: 100%;
     text-transform: uppercase;
 
     color: #000000;
 }
 .home-sub{
-    position: absolute;
-    width: 291px;
-    height: 82px;
-    left: 79px;
-    top: 96px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 10%;
+    top: 40px;
 
     font-family: Courier New;
     font-style: normal;
@@ -58,13 +60,38 @@ a{
     color: #000000;
 }
 
+/* massachusetts institute of technology cs + math ‘23 */
+.center{
+    position: absolute;
+    width: 651px;
+    height: 347px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    text-transform: uppercase;
+}
+
+.center-c{
+    left: 489px;
+    top: 189px;
+    color: black;
+}
+.center-s{
+    left: 509px;
+    top: 206px;
+    color: #E0CA80;    
+}
+
 .header{
     position: absolute;
     width: 131px;
     height: 45px;
-    left: 1208px;
-    top: 532px;
-
+    left: 1212px;
+    top: 401px;
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -72,8 +99,8 @@ a{
     line-height: 27px;
     text-align: right;
     text-transform: uppercase;
-
-    color: #000000;
+    
+    color: #000000;    
 }
 .bg-p {
     color: black;
