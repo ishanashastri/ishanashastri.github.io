@@ -2,7 +2,6 @@ html{
     background-color: #F8E08E;
     font-family: 'Roboto', 'Courier New', sans-serif;
     color: black;
-    height: 100%;
 }
 /* CUSTOM FONT */
 @font-face {
@@ -15,7 +14,6 @@ html{
 
 body{
     background-color: #F8E08E;
-    height: 100%;
 }
 
 a{
@@ -49,7 +47,7 @@ a{
     left: 10%;
     top: 40px;
 
-    font-family: Courier New;
+    font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
