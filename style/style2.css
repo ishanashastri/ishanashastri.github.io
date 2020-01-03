@@ -22,6 +22,7 @@ html {
     max-height: 100vh;
     max-width: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   
   
@@ -30,7 +31,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 5vw;
+    left: 10vw;
     top: 2vw;
   
     font-family: 'Roboto';
@@ -47,7 +48,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 5%;
+    left: 10vw;
     top: 7vw;
   
     font-family: 'Courier New', Courier, monospace;
@@ -78,20 +79,20 @@ html {
   
   .center-c {
     left: 50vw;
-    top: 50%;
+    top: 37%;
     color: black;
   }
   
   .center-s {
-    left: 55vw;
-    top: 55%;
+    left: 52vw;
+    top: 39%;
     color: #E0CA80;
   }
   
   .header {
     position: absolute;
-    top: 100%;
-    right: 0;
+    bottom: 2%;
+    right: -49px;
   
     font-family: Roboto;
     font-style: normal;
