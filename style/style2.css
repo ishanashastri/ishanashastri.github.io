@@ -2,6 +2,8 @@ html {
     background-color: #F8E08E;
     font-family: 'Roboto', 'Courier New', sans-serif;
     color: black;
+    margin: 0;
+    height: 100%;
   }
   
   /* CUSTOM FONT */
@@ -15,6 +17,8 @@ html {
   
   body {
     background-color: #F8E08E;
+    margin: 0;
+    height: 100%;
   }
   
   
@@ -23,14 +27,14 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 5%;
-    top: 30px;
+    left: 5vw;
+    top: 2vw;
   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    font-size: 200%;
-    line-height: 100%;
+    font-size: 3vw;
+    line-height: 5vw;
     text-transform: uppercase;
   
     color: #000000;
@@ -41,13 +45,13 @@ html {
     width: 100%;
     height: 100%;
     left: 5%;
-    top: 40px;
+    top: 7vw;
   
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: normal;
-    font-size: 100%;
-    line-height: 20px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     text-transform: uppercase;
     text-align: left;
   
@@ -84,15 +88,14 @@ html {
   .header {
     position: absolute;
     width: 100%;
-    height: 100%;
-    right: -47%;
-    top: 100%;
+    left: 90vw;
+    top: 90vh;
   
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 23px;
-    line-height: 27px;
+    font-size: 3vw;
+    line-height: 3.5vw;
     text-align: right;
     text-transform: uppercase;
   
@@ -105,6 +108,7 @@ html {
     font-weight: bold;
     text-decoration: none;
   }
+  
   .bg-p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
