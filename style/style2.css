@@ -20,7 +20,7 @@ html {
   
   /* Ishana Shastri */
   .home-name {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 5%;
@@ -37,7 +37,7 @@ html {
   }
   
   .home-sub {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 5%;
@@ -82,7 +82,7 @@ html {
   }
   
   .header {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     right: -47%;
