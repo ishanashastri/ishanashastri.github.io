@@ -162,13 +162,13 @@ html {
   
   .contact-c{
     left: 8vw;
-    top: 10vw;
+    bottom: 10vw;
     color: black;
   }
 
   .contact-s{
     left: 20vw;
-    top: 13vw;
+    bottom: 13vw;
     color: #E0CA80;
   }
 
