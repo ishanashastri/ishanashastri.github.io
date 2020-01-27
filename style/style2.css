@@ -88,6 +88,33 @@ html {
     top: 39%;
     color: #E0CA80;
   }
+
+  /*about keywords*/
+  .about-c,
+  .about-s {
+    position: absolute;
+    width: 651px;
+    height: 10px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  .about-c {
+    left: 50vw;
+    top: 37%;
+    color: black;
+  }
+  
+  .about-s {
+    left: 52vw;
+    top: 39%;
+    color: #E0CA80;
+  }
   
   .header {
     position: absolute;
@@ -97,8 +124,8 @@ html {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     text-align: right;
     text-transform: uppercase;
     z-index: 2;
@@ -120,13 +147,13 @@ html {
     position: fixed;
     width: 131px;
     height: 100px;
-    right: 13vw;
-    top: 13vh;
+    right: 1vw;
+    top: 2vw;
     z-index: 1;
     width: 300px;
     padding: 20px;
     text-align: right;
     margin: 0 auto;
-    width: 30em;
+    width: 60%;
   }
   
