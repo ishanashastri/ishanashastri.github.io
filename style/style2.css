@@ -88,6 +88,7 @@ html {
     top: 39%;
     color: #E0CA80;
   }
+  /* end of massachusetts institute of technology cs + math ‘23 */
 
   /*about keywords*/
   .about-c,
@@ -99,7 +100,7 @@ html {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-transform: uppercase;
     z-index: 2;
   }
@@ -112,10 +113,12 @@ html {
   
   .about-s {
     left: 20vw;
-    top: 11vw;
+    top: 13vw;
     color: #E0CA80;
   }
   
+  /*end of about keywords*/ 
+
   .header {
     position: absolute;
     bottom: 1vw;
@@ -139,7 +142,7 @@ html {
     text-decoration: none;
   }
   
-  .bg-p {
+  .about-p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5vw;
