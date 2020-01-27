@@ -142,11 +142,12 @@ html {
     text-decoration: none;
   }
 
-  a.contact{
+  a.contact-c{
     font-weight: normal;
     font-style: italic;
+    text-transform: lowercase;
   }
-  
+
   .contact-c, .contact-s{
     position: absolute;
     width: 651px;
@@ -162,14 +163,14 @@ html {
   
   .contact-c{
     left: 8vw;
-    bottom: 10vw;
+    top: 20vw;
     color: black;
   }
 
   .contact-s{
-    left: 20vw;
-    bottom: 13vw;
-    color: #E0CA80;
+    left: 8.5vw;
+    top: 20.5vw;
+    color: #F5EFE7;
   }
 
   .about-p {
