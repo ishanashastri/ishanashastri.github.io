@@ -141,7 +141,37 @@ html {
     font-weight: bold;
     text-decoration: none;
   }
+
+  a.contact{
+    font-weight: normal;
+    font-style: italic;
+  }
   
+  contact-c, contact-s{
+    position: absolute;
+    width: 651px;
+    height: 10px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  contact-c{
+    left: 8vw;
+    top: 10vw;
+    color: black;
+  }
+
+  contact-s{
+    left: 20vw;
+    top: 13vw;
+    color: #E0CA80;
+  }
+
   .about-p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
@@ -157,6 +187,6 @@ html {
     padding: 20px;
     text-align: right;
     margin: 0 auto;
-    width: 60%;
+    width: 52%;
   }
   
