@@ -16,6 +16,15 @@ html {
     font-style: normal;
   }
   
+  /* BOLDED FONT */
+  @font-face { 
+    font-family: 'Roboto'; 
+    font-weight: bold; 
+    src: url('/style/webfontkit/roboto-bold.ttf') format('ttf'),
+    url('/style/webfontkit/roboto-bold.woff') format('woff');
+  }
+
+  
   body {
     background-color: #F8E08E;
     margin: 0;
