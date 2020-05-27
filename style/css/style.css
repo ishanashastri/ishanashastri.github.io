@@ -1,6 +1,6 @@
 html {
-    background-color: #F8E08E;
-    font-family: 'Roboto', 'Courier New', sans-serif;
+    background-color: white;
+    font-family: 'IBM Plex Sans';
     color: black;
     margin: 0;
     max-height: 100vh;
@@ -36,7 +36,7 @@ html {
   .home-name {
     position: absolute;
     right: 10vw;
-    bottom: 6vw;
+    bottom: 22vh;
 
     font-family: 'IBM Plex Sans';
     font-size: 80px;
@@ -50,7 +50,7 @@ html {
   .home-sub {
     position: absolute;
     right: 10vw;
-    bottom: 2vw;
+    bottom: 12vh;
   
     font-family: 'IBM Plex Sans';
     font-size: 50px;
@@ -64,10 +64,10 @@ html {
   
   .portrait{
     position: absolute;
-    width: 780px;
+    width: 100vw;
     height: 875px;
-    left: -29px;
-    top: 32px;
+    left: 20vw;
+    top: 30vh;
   }
   
   /* massachusetts institute of technology cs + math ‘23 */
@@ -154,6 +154,7 @@ html {
   }
   .header-right {
     float: right;
+    padding-right: 20px; 
   }
   /* HEADER END*/
 
@@ -216,17 +217,20 @@ html {
   }
   
   /* When the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 580px) {
     .header a {
-      float: none;
+      float: left;
       display: block;
       text-align: right;
+      font-size: 3vw;
+      padding: 2vw;
     }
     .header-right {
       float: none;
     }
     .home-name{
-      font-size: 24vw;
+      font-size: 20vw;
       margin-left: 0;
+      text-align: right;
     }
   }
