@@ -62,6 +62,14 @@ html {
     color: #75B4C2;
   }
   
+  .portrait{
+    position: absolute;
+    width: 780px;
+    height: 875px;
+    left: -29px;
+    top: 32px;
+  }
+  
   /* massachusetts institute of technology cs + math ‘23 */
   .center-c,
   .center-s {
