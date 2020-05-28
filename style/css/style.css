@@ -30,10 +30,18 @@ html {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  
+  a {
+    color: black;
+    font-family: 'IBM Plex Sans';
+    font-weight: normal;
+    text-decoration: none;
+  }
+  b{
+    color: #75B4C2;
+  }
   
   /* Ishana Shastri */
-  .home-name {
+  h1{
     position: absolute;
     right: 4vw;
     bottom: 22vh;
@@ -47,7 +55,7 @@ html {
     color: #000000;
   }
   
-  .home-sub {
+  h2 {
     position: absolute;
     right: 4vw;
     bottom: 12vh;
@@ -113,7 +121,7 @@ html {
   /* HEADER END*/
 
   /* Page Subtitles */
-  .subtitle{
+  h3{
     position: absolute;
     left: 30px;
     top: 64px;
@@ -126,7 +134,7 @@ html {
     text-decoration-color: #F8E135;
   }
 
-  .about-p {
+  .about{
     color: black;
     font-size: 1.5vw;
     padding: 17px;
@@ -135,15 +143,7 @@ html {
     margin-top: 40px;
     line-height: 2vw;
   }
-  b{
-    color: #75B4C2;
-  }
-  a {
-    color: black;
-    font-family: 'IBM Plex Sans';
-    font-weight: normal;
-    text-decoration: none;
-  }
+  
 
   a.contact{
     font-weight: normal;
@@ -165,7 +165,6 @@ html {
     bottom: 50.5vh;
     color: black;
   }
-
 
   
   /* When the screen is 500px wide or less, stack the links on top of each other */
