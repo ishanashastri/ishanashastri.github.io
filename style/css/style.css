@@ -27,7 +27,7 @@ html {
   body {
     background-color: rgb(255, 255, 255);
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: hidden;
   }
   a {
@@ -47,7 +47,7 @@ html {
     bottom: 22vh;
 
     font-family: 'IBM Plex Sans';
-    font-size: 6.5vw;
+    font-size: 6.2vw;
     font-weight: bold;
     line-height: 1;
     text-align: right;
@@ -73,11 +73,13 @@ html {
 
   img{
     position: absolute;
-    width: 50vw;
-    height: 50vw;
-    left: -26vw;
-    top: -21vh;
+    width: 50vmax;
+    height: 50vmax;
+    left: 5vh;
+    bottom: -9vh;
     z-index: -1;
+    margin-left: -65px;
+    /* margin-top: 4vh; */
   }
   img:hover{
     transform: rotate(-5deg);
@@ -122,20 +124,20 @@ html {
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
-    line-height: 5vw;
     color: black;
+    line-height: 2.5vh;
     text-decoration: underline;
     text-decoration-color: #F8E135;
   }
 
   .about{
     color: black;
-    font-size: 1.5vw;
+    font-size: large;
     padding: 17px;
     text-align: justify;
     margin: 17px;
-    margin-top: 4.5vw;
-    line-height: 2vw;
+    margin-top: 6.5vh;
+    line-height: 4vh;
   }
   
 
@@ -152,41 +154,49 @@ html {
     font-style: normal;
     font-size: 50px;
     color: black;
-    line-height: 6vw;
+    line-height: 12vh;
     padding: 30px;
     margin-top: 40px;
   }
 
   
   /* When the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 580px) {
-    .header a {
+  @media screen and (max-width: 600px) and (min-width: 400px) {
+    .header {
       float: left;
       display: block;
       text-align: right;
-      font-size: 3vw;
+      align-items:center;
+      margin-left: 10vw;
       padding: 2vw;
     }
+    .header a{
+      font-size: 3vw;
+    }
     .header-right {
-      float: none;
+      /* float: none; */
+      justify-content: center;
     }
     h1{
-      font-size: 15vw;
+      font-size: 13vmin;
       text-align: center;
+      align-items: center;
+      top: 55%;
     }
     h2{
-
-      font-size:10vw;
-      text-align: left;
-    }
+      font-size:8vw;
+      margin-right: 15%;
+      top: 78%; 
+      /* justify-content: center; */
+      }
     img{
       position: absolute;
-      width: 300px;
-      height: 300px;
-      margin-top: -150px;
-      margin-left: -150px;
+      width: 50vmax;
+      height: 50vmax;
+      margin-top: 3vmax;
+      margin-left: -28vmax;
       left: 50%;
-      top: 50%;
+      top: 12%;
       z-index: -1;
     }
   }
