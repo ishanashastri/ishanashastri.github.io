@@ -91,7 +91,7 @@ img:hover{
 .header a {
   float: left;
   font-family: 'IBM Plex Sans';
-  font-style: normal; 
+  font-style: normal;
   color: black;
   text-align: center;
   padding: 12px;
@@ -114,27 +114,28 @@ img:hover{
 /* HEADER END*/
 
 /* Page Subtitles */
-h3{
+.header a.h3{
   position: absolute;
-  left: 30px;
+  left: 24px;
   top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   color: black;
-  line-height: 2.5vh;
+  /* line-height: 2.5vh; */
   text-decoration: underline;
   text-decoration-color: #F8E135;
 }
 
+
 .about{
   color: black;
-  font-size: large;
+  font-size: 25px;
   padding: 17px;
   text-align: justify;
   margin: 17px;
-  margin-top: 6.5vh;
-  line-height: 4vh;
+  margin-top: 70px;
+  line-height: 32px;
 }
 
 
@@ -151,7 +152,7 @@ a.c{
   font-style: normal;
   font-size: 50px;
   color: black;
-  line-height: 12vh;
+  line-height: 73px;
   padding: 30px;
   margin-top: 40px;
 }
@@ -163,6 +164,9 @@ a.c{
   }
   h2 {
     font-size: 90px;
+  }.about{
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px){
@@ -171,6 +175,10 @@ a.c{
   }
    h2 {
     font-size: 70px;
+  } 
+  .about{
+    font-size: 30px;
+    line-height: 35px;
   }
 }
  @media screen and (min-width: 960px) and (max-width: 1199px){
@@ -179,21 +187,38 @@ a.c{
   }
    h2 {
     font-size: 60px;
+  }  .about{
+    font-size: 25px;
+    line-height: 33px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 959px) {
+@media screen and (max-width: 959px) and (min-width: 530px) {
   h1{
     font-size: 70px;
   }
    h2 {
     font-size: 50px;
   }
-}
-@media screen and (orientation:portrait){
-  .header {
+  .header a{
     display: none;
   }
-  /* add display code for the menu*/
+  .header a.h3{
+    display: block;
+  }
+  .contact{
+    /* font-size: 42px; */
+    /* line-height: 62px; */
+  }
+}
+@media screen and (orientation:portrait){
+  .header a{
+    display: none;
+  }
+  .header a.h3{
+    display: block;
+    font-size: 50px;
+  }
+  /* add display code for contact menu*/
   h1{
     font-size: 13vw;
     left: 0%;
@@ -224,6 +249,15 @@ a.c{
     top: 12%;
     z-index: -1;
   }
+  .about{
+    /* margin-top: 65px; */
+    /* font-size: 25px; */
+    /* line-height: 32px; */
+    text-align: left;
+  }.contact{
+    display: none;
+    /* add contact menu */
+  }
 }
 @media screen and (max-height: 700px) and (orientation: landscape){
 h1{
@@ -249,6 +283,9 @@ h2 {
   margin: 0 0 10px -4px;
   padding-top: 0px;
   color: #75B4C2;
+}.contact{
+  font-size:40px;
+  line-height: 50px;
 }
 }
 @media screen and (max-height: 400px){
@@ -264,4 +301,49 @@ h2 {
     max-width: 54%;
     max-height: 100%;
   }
+}@media screen and (min-width: 700px) and (landscape:portrait){
+  header a.h3{
+    font-size: 30px
+  }
+}@media screen and (max-width: 600px) and (min-width: 315px) and (orientation: portrait){
+  .header a.h3{
+    display: block;
+    font-size: 41px;
+    margin:  1vw;
+    margin-left: 0px;
+    padding: 0px;
+  }
+  /* add display code for menu*/
+  .about{
+    margin: 1vw;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: left;
+    margin-top: 39px;
+  }
+}@media screen and (max-width: 320px) and (orientation: portrait){
+  .header a.h3{
+    display: block;
+    font-size: 25px;
+    margin:  1vw;
+    /* margin-left: -4px; */
+    padding: 0px;
+  }
+  /* add display code for menu*/
+  .about{
+    margin: 1vw;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: left;
+    padding-top: 3vw;
+    margin-top: 22px;
+  }
+  .contact{
+    display: none;
+  }
 }
+@media screen and (max-width: 650px) and (orientation: landscape){
+  .contact{
+    font-size: 42px;
+  }
+  }
