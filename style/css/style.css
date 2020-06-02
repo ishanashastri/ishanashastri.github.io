@@ -532,9 +532,6 @@ h1{
       top: 350px;
     }
   }@media screen and (orientation: portrait) and (max-height:670px) and (max-width: 500px){
-    body{
-      overflow-y: hidden;
-    }
     h1{
       top: 100px;
       font-size: 70px;
