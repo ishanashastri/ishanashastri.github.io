@@ -75,7 +75,7 @@ img{
   z-index: -1;
   /* margin-left: -65px; */
   /* margin-top: 4vh; */
-  max-width: 54%;
+  max-width: 50%;
   max-height: 100%;
 }
 img:hover{
@@ -134,7 +134,7 @@ img:hover{
   padding: 17px;
   text-align: justify;
   margin: 17px;
-  margin-top: 70px;
+  /* margin-top: 43px; */
   line-height: 32px;
 }
 
@@ -157,7 +157,64 @@ a.c{
   margin-top: 40px;
 }
 
+/* portrait menu */
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* z-index: 2; */
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  bottom: -50%;
+  width: 100%;
+  text-align: left;
+  margin-left: 6%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #EA684C;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.circle{
+  font-size: 22px;
+  cursor:pointer;
+  float: right;
+  padding-right: 20px;
+}
+
+/*end of circle menu */
 @media screen and (min-width: 1400px){
   h1{
     font-size: 120px;
@@ -192,7 +249,7 @@ a.c{
     line-height: 33px;
   }
 }
-@media screen and (max-width: 959px) and (min-width: 530px) {
+@media screen and (max-width: 959px){
   h1{
     font-size: 70px;
   }
@@ -204,13 +261,18 @@ a.c{
   }
   .header a.h3{
     display: block;
+    font-size: 40px;
   }
-  .contact{
-    /* font-size: 42px; */
-    /* line-height: 62px; */
+  .about{
+    font-size:25px;
+    margin-top:0px;
+  }
+}@media screen and (orientation: landscape) and (min-width:959px){
+  .circle{
+    display: none;
   }
 }
-@media screen and (orientation:portrait){
+@media screen and (orientation: portrait){
   .header a{
     display: none;
   }
@@ -218,41 +280,54 @@ a.c{
     display: block;
     font-size: 50px;
   }
-  /* add display code for contact menu*/
+  .circle{
+    display:block;
+  }
   h1{
-    font-size: 13vw;
-    left: 0%;
-    top: 52%;
-    margin: 0 0 10px -4px;
+    font-size: 105px;
+    /* left: 0%; */
+    top: 20%;
+    /* margin: 0 0 10px -4px; */
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6%;
+    margin-right: 7%;
+    /*top: 0;*/
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1000px;
   }
   h2{
-    font-size:8vw;
-    top: 75%; 
-    left: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-size: 64px;
+    top: 34%;
+    left: 21%;
+    /* margin-left: 13%; */
+    /* margin-right: 10%; */
     text-align:center;
     padding-top: 0px;
-    max-width: 100%;
-    /* justify-content: center; */
+    /*top: 0;*/
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: absolute;
+    bottom: 0;
     }
   img{
     position: absolute;
     max-width: 100%;
-    max-height: 50%;
-    margin-top: 3vmax;
-    margin-left: -28vmax;
-    left: 50%;
-    top: 12%;
+    max-height: 63%;
+    left: -40px;
+    bottom: -6%;
     z-index: -1;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -60px;
   }
   .about{
-    /* margin-top: 65px; */
-    /* font-size: 25px; */
-    /* line-height: 32px; */
     text-align: left;
   }.contact{
     display: none;
@@ -288,7 +363,7 @@ h2 {
   line-height: 50px;
 }
 }
-@media screen and (max-height: 400px){
+@media screen and (max-height: 400px) and (max-width: 900px){
   img{
     position: absolute;
     /* width: 50vmax; */
@@ -300,6 +375,7 @@ h2 {
     /* margin-top: 4vh; */
     max-width: 54%;
     max-height: 100%;
+    display: none;
   }
 }@media screen and (min-width: 700px) and (landscape:portrait){
   header a.h3{
@@ -319,7 +395,7 @@ h2 {
     font-size: 4vw;
     line-height: 6vw;
     text-align: left;
-    margin-top: 39px;
+    /* margin-top: 39px; */
   }
 }@media screen and (max-width: 320px) and (orientation: portrait){
   .header a.h3{
@@ -331,19 +407,174 @@ h2 {
   }
   /* add display code for menu*/
   .about{
-    margin: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     font-size: 4vw;
     line-height: 6vw;
     text-align: left;
     padding-top: 3vw;
-    margin-top: 22px;
+    margin-top: 2px;
   }
   .contact{
     display: none;
+  }.circle{
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 650px) and (orientation: landscape){
   .contact{
     font-size: 42px;
+  }.about{
+    font-size:20px;
   }
+  }
+  @media screen and (max-width: 775px) and (orientation: portrait){
+    h1{
+      /* font-size: 89px; */
+    }
+    h2{
+      /* font-size: 48px; */
+    }
+  }
+  @media screen and (max-width: 774px) and (min-width: 600px) and (orientation: portrait){
+    h1{
+      font-size: 91px;
+    }
+    h2{
+      font-size: 54px;
+      top: 34%;
+    }
+    img{
+     left: 0;
+     bottom: 0;
+     right: 0;
+     margin: 0 auto;
+     max-width: 700px;
+     position: absolute;
+     bottom: 0;
+     /* max-height: 65%; */
+     left: -40px;
+     bottom: -5%;
+    }
+  }@media screen and (max-width: 725px) and (min-width: 593px) and (orientation: portrait){
+    h1{
+      font-size: 89px;
+      margin-right: 11%;
+      /*top: 0;*/
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 600px;
+      position: absolute;
+      bottom: 0;
+    }
+    h2{
+      font-size: 54px;
+      margin-right: 22%;
+      margin-left: 8%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 600px;
+      position: absolute;
+      bottom: 0;
+    }
+    img{
+      bottom: -5%;
+    }
+  }@media screen and (max-width: 593px) and (min-width: 451px) and (orientation: portrait){
+    h1{
+      font-size: 90px;
+    }
+    h2{
+      position: absolute;
+      font-size: 54px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0px auto;
+      max-width: 332px;
+      top: 345px;
+    }img{
+      bottom: -81px;
+      max-width: 432px;
+    }
+  }@media screen and (max-width: 450px) and (orientation: portrait){
+    h2{
+      top: 43%;
+      left: 40px;
+      margin-right: 40px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 300px;
+      position: absolute;
+      bottom: 0;
+    }
+    img{
+      left: -30px; bottom: 0; right: 0;
+      margin: 0 auto;
+      max-width: 400px;
+      position: absolute;
+      bottom: -20px;
+    }
+  }@media screen and (max-width: 449px) and (orientation: portrait){
+    h1{
+      font-size: 81px;
+      top: 160px;
+    }
+    h2{
+      font-size:50px;
+      top: 344px;
+      left: 40px;
+      margin-right: 40px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 300px;
+      position: absolute;
+      bottom: 0;
+    }
+    img{
+      left: -30px;
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 400px;
+      position: absolute;
+      bottom: -20px;
+      top: 440px;
+    }
+  }@media screen and (orientation: portrait) and (max-height:750px) and (max-width: 500px){
+    h1{
+      top:80px;
+    }
+    h2{
+      top: 260px;
+    }
+    img{
+      top: 350px;
+    }
+  }@media screen and (orientation: portrait) and (max-height:670px) and (max-width: 500px){
+    body{
+      overflow-y: hidden;
+    }
+    h1{
+      top: 60px;
+      font-size: 70px;
+    }
+    h2{
+      font-size: 30px;
+      top: 220px;
+    }
+    img{
+      top: 250px;
+    } 
+  }@media screen and (min-height: 600px) and (orientation: landscape){
+    img{
+      max-width: 59%;
+      right: -12px;
+    }
   }

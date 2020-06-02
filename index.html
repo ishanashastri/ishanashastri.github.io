@@ -7,12 +7,14 @@
         <link rel="stylesheet" type="text/css" href="/style/css/style.css">
         <link rel="shortcut icon" type="image/icon" href="/favicon.ico"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
         <!-- Navigation menu -->
         <div class="header">
+            <span class="circle" id="cr">&#9898;</span>
             <div class="header-right">
                 <a class="active" href="/index.html">ishana</a>
                 <a href="/about.html">about</a>
@@ -20,6 +22,18 @@
                 <a href="/resume.pdf">resume</a>
                 <a href="/contact.html">contact</a>
               </div>
+        </div>
+
+        <!-- Mobile Navigation menu -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="cb" class="closebtn">×</a>
+            <div class="overlay-content">
+                <a class="active" href="/index.html">ishana</a>
+                <a href="/about.html">about</a>
+                <a href="/projects.html">projects</a>
+                <a href="/resume.pdf">resume</a>
+                <a href="/contact.html">contact</a>
+            </div>
         </div>
 
         <h1>
@@ -32,6 +46,14 @@
 
         <img src="/portrait.png">
         
-
+        <script type="text/javascript">document.getElementById("cr").onclick = function() {openNav()};
+            function openNav() {
+                document.getElementById("myNav").style.width= "100%";
+            }
+            document.getElementById("cb").onclick = function() {closeNav()};
+            function closeNav() {
+                document.getElementById("myNav").style.width= "0%";
+            }
+        </script>
     </body>
 </html>
