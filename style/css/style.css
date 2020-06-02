@@ -1,3 +1,7 @@
+
+
+
+
 html {
   background-color: white;
   font-family: 'IBM Plex Sans';
@@ -267,6 +271,8 @@ a.c{
 }@media screen and (orientation: landscape) and (min-width:959px){
   .fa.b{
     display: none;
+  }a.fa{
+    display: none;
   }
 }
 @media screen and (orientation: portrait){
@@ -320,7 +326,8 @@ a.c{
     text-align: left;
   }.contact{
     display: none;
-    /* add contact menu */
+  }a.fa{
+    display: block;
   }
 }
 @media screen and (max-height: 700px) and (orientation: landscape){
@@ -346,6 +353,8 @@ h1{
 }.contact{
   font-size:40px;
   line-height: 50px;
+}a.fa{
+  display: none;
 }
 }
 @media screen and (max-height: 400px) and (max-width: 700px){
@@ -364,7 +373,6 @@ h1{
     margin-left: 0px;
     padding: 0px;
   }
-  /* add display code for menu*/
   .about{
     margin: 1vw;
     font-size: 4vw;
@@ -378,7 +386,6 @@ h1{
     margin:  1vw;
     padding: 0px;
   }
-  /* add display code for menu*/
   .about{
     margin-left: 1vw;
     margin-right: 1vw;
@@ -392,6 +399,8 @@ h1{
     display: none;
   }.fa.b{
     font-size: 15px;
+  }a.fa{
+    display: block;
   }
 }
 @media screen and (max-width: 650px) and (orientation: landscape){
@@ -399,6 +408,8 @@ h1{
     font-size: 42px;
   }.about{
     font-size:20px;
+  }a.fa{
+    display: none;
   }
   }
   @media screen and (max-width: 774px) and (min-width: 600px) and (orientation: portrait){
@@ -559,4 +570,29 @@ h1{
       font-size: 30px;
       top: 160px;
     }
+  }a.fa {
+    padding: 23px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -56px;
+  }a.fa.fa-envelope{
+    top: 100px;
+    background-color: lightblue;
+  }a.fa.fa-github{
+    top: 220px;
+    background-color:#6a737d;
+  }a.fa.fa-linkedin{
+    top: 340px;
+    background-color: #0e76a8;
+  }a.fa.fa-facebook{
+    top: 460px;
+    background-color: #4267B2;
+  }a.fa.fa-instagram{
+    top: 580px;
+    background-color: #C13584;
   }
