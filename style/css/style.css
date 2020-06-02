@@ -265,7 +265,7 @@ a.c{
     margin-top:0px;
   }
 }@media screen and (orientation: landscape) and (min-width:959px){
-  .circle{
+  .fa.b{
     display: none;
   }
 }
@@ -277,7 +277,7 @@ a.c{
     display: block;
     font-size: 50px;
   }
-  .circle{
+  .fa.b{
     display:block;
   }
   h1{
@@ -390,7 +390,7 @@ h1{
   }
   .contact{
     display: none;
-  }.circle{
+  }.fa.b{
     font-size: 15px;
   }
 }
