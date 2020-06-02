@@ -68,13 +68,9 @@ h2 {
 
 img{
   position: absolute;
-  /* width: 50vmax; */
-  /* height: 50vmax; */
   right: 33px;
   bottom: -14vh;
   z-index: -1;
-  /* margin-left: -65px; */
-  /* margin-top: 4vh; */
   max-width: 50%;
   max-height: 100%;
 }
@@ -122,7 +118,6 @@ img:hover{
   font-weight: bold;
   font-size: 60px;
   color: black;
-  /* line-height: 2.5vh; */
   text-decoration: underline;
   text-decoration-color: #F8E135;
 }
@@ -134,7 +129,6 @@ img:hover{
   padding: 17px;
   text-align: justify;
   margin: 17px;
-  /* margin-top: 43px; */
   line-height: 32px;
 }
 
@@ -157,13 +151,13 @@ a.c{
   margin-top: 40px;
 }
 
-/* portrait menu */
+/* start of bars menu */
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  /* z-index: 2; */
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: white;
@@ -172,8 +166,8 @@ a.c{
 }
 
 .overlay-content {
-  position: relative;
-  bottom: -50%;
+  position: absolute;
+  bottom: 5vh;
   width: 100%;
   text-align: left;
   margin-left: 6%;
@@ -187,16 +181,19 @@ a.c{
   display: block;
   transition: 0.3s;
 }
-
+.overlay a.active {
+  color: #EA684C;
+  font-weight: bold;
+}
 .overlay a:hover, .overlay a:focus {
   color: #EA684C;
 }
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: -15px;
+  right: 20px;
+  font-size: 50px;
 }
 
 @media screen and (max-height: 450px) {
@@ -207,14 +204,14 @@ a.c{
   right: 35px;
   }
 }
-.circle{
-  font-size: 22px;
+.fa.b{
+  font-size: 25px;
   cursor:pointer;
   float: right;
   padding-right: 20px;
 }
 
-/*end of circle menu */
+/*end of bars menu */
 @media screen and (min-width: 1400px){
   h1{
     font-size: 120px;
@@ -285,13 +282,10 @@ a.c{
   }
   h1{
     font-size: 105px;
-    /* left: 0%; */
     top: 20%;
-    /* margin: 0 0 10px -4px; */
     text-align: center;
     margin-left: 6%;
     margin-right: 7%;
-    /*top: 0;*/
     left: 0;
     bottom: 0;
     right: 0;
@@ -301,14 +295,9 @@ a.c{
   h2{
     font-size: 64px;
     top: 34%;
-    left: 21%;
-    /* margin-left: 13%; */
-    /* margin-right: 10%; */
     text-align:center;
     padding-top: 0px;
-    /*top: 0;*/
     left: 0;
-    bottom: 0;
     right: 0;
     margin: 0 auto;
     max-width: 1000px;
@@ -339,19 +328,15 @@ h1{
   position: absolute;
   left: 4vw;
   top: 100px;
-  font-family: 'IBM Plex Sans';
   font-size: 80px;
   font-weight: bold;
   line-height: 1;
   margin: 0 0 10px -4px;
   color: #000000;
-}
-
-h2 {
+}h2 {
   position: absolute;
   left: 4vw;
   top: 180px;
-  font-family: 'IBM Plex Sans';
   font-size: 60px;
   font-weight: bold;
   line-height: 1;
@@ -363,18 +348,8 @@ h2 {
   line-height: 50px;
 }
 }
-@media screen and (max-height: 400px) and (max-width: 900px){
+@media screen and (max-height: 400px) and (max-width: 700px){
   img{
-    position: absolute;
-    /* width: 50vmax; */
-    /* height: 50vmax; */
-    right: 33px;
-    top: 70px;
-    z-index: 1;
-    /* margin-left: -65px; */
-    /* margin-top: 4vh; */
-    max-width: 54%;
-    max-height: 100%;
     display: none;
   }
 }@media screen and (min-width: 700px) and (landscape:portrait){
@@ -395,14 +370,12 @@ h2 {
     font-size: 4vw;
     line-height: 6vw;
     text-align: left;
-    /* margin-top: 39px; */
   }
 }@media screen and (max-width: 320px) and (orientation: portrait){
   .header a.h3{
     display: block;
     font-size: 25px;
     margin:  1vw;
-    /* margin-left: -4px; */
     padding: 0px;
   }
   /* add display code for menu*/
@@ -428,14 +401,6 @@ h2 {
     font-size:20px;
   }
   }
-  @media screen and (max-width: 775px) and (orientation: portrait){
-    h1{
-      /* font-size: 89px; */
-    }
-    h2{
-      /* font-size: 48px; */
-    }
-  }
   @media screen and (max-width: 774px) and (min-width: 600px) and (orientation: portrait){
     h1{
       font-size: 91px;
@@ -452,7 +417,6 @@ h2 {
      max-width: 700px;
      position: absolute;
      bottom: 0;
-     /* max-height: 65%; */
      left: -40px;
      bottom: -5%;
     }
@@ -460,7 +424,6 @@ h2 {
     h1{
       font-size: 89px;
       margin-right: 11%;
-      /*top: 0;*/
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -494,7 +457,7 @@ h2 {
       right: 0;
       margin: 0px auto;
       max-width: 332px;
-      top: 345px;
+      top: 45%;
     }img{
       bottom: -81px;
       max-width: 432px;
@@ -562,19 +525,38 @@ h2 {
       overflow-y: hidden;
     }
     h1{
-      top: 60px;
+      top: 100px;
       font-size: 70px;
     }
     h2{
-      font-size: 30px;
-      top: 220px;
+      font-size: 35px;
+      top: 260px;
     }
     img{
-      top: 250px;
+      top: 285px;
     } 
   }@media screen and (min-height: 600px) and (orientation: landscape){
     img{
       max-width: 59%;
       right: -12px;
+    }
+  }@media screen and (max-height: 400px) and (min-width: 700px){
+    img{
+      max-width: 37%;
+      toP: 71px;
+      right: 2px;
+    }
+  }@media screen and (max-height: 700px) and (max-width: 550px) and (min-width: 451px) and (orientation: landscape){
+    h1{
+      font-size: 65px;
+    }h2{
+      font-size: 50px;
+    }
+  }@media screen and (max-height: 700px) and (max-width: 450px) and (orientation: landscape){
+    h1{
+      font-size: 50px;
+    }h2{
+      font-size: 30px;
+      top: 160px;
     }
   }
