@@ -212,13 +212,15 @@ a.c{
   border-width: 1px;
   border-radius: 25px;
   margin: 10px;
-  padding: 17px;
+  padding: 23px;
+  padding-top: 16px;
   font-size: 107%;
   width: 286px;
   height: auto;
 }
 b.year {
   font-size: 141%;
+  text-decoration: underline;
 }
 b.coursenum {
   color: black;
