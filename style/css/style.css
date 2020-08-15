@@ -203,6 +203,7 @@ a.c{
   display: flex;
   flex-wrap: wrap;
   border-width: 1px;
+  margin: 23px;
 }
 
 .flex-container > div {
@@ -211,9 +212,10 @@ a.c{
   border-width: 1px;
   border-radius: 25px;
   margin: 10px;
-  padding: 10px;
-  font-size: 3vh;
-  width: 250px;
+  padding: 17px;
+  font-size: 107%;
+  width: 286px;
+  height: 174px;
 }
 
 @media screen and (max-height: 450px) {
