@@ -217,14 +217,12 @@ a.c{
   width: 286px;
   height: auto;
 }
-.flex-container > div > b {
-  font-size: 135%;
-}
 b.year {
   font-size: 141%;
 }
 b.coursenum {
   color: black;
+  line-height: 30px;
 }
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
