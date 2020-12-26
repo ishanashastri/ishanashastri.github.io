@@ -1,10 +1,6 @@
-
-
-
-
 html {
-  background-color: white;
-  font-family: 'IBM Plex Sans';
+  background-color: #B0E3FF;
+  font-family: 'DM Serif Text';
   color: black;
   margin: 0;
   max-height: 100vh;
@@ -28,20 +24,34 @@ html {
   url('/style/fonts/ibmplexsans-bold-webfont.woff') format('woff');
 }
 
+/* TERMINAL GROTESQUE */
+@font-face { 
+  font-family: 'Terminal Grotesque'; 
+  font-weight: bold; 
+  src: url('./style/fonts/terminal-grotesque.ttf') format('ttf');
+}
+
+/* TERMINAL GROTESQUE OPEN */
+@font-face { 
+  font-family: 'Terminal Grotesque Open'; 
+  font-weight: bold; 
+  src: url('/style/fonts/terminal-grotesque_open.otf') format('otf');
+}
+
+
 body {
-  background-color: rgb(255, 255, 255);
   margin: 0;
   overflow-x: hidden;
   /* overflow-y: hidden; */ 
 }
 a {
   color: black;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Syne, sans-serif';
   font-weight: normal;
   text-decoration: none;
 }
 b{
-  color: #75B4C2;
+  color: black;
 }
 
 /* Ishana Shastri */
@@ -49,7 +59,7 @@ h1{
   position: absolute;
   left: 4vw;
   top: 16vh;
-  font-family: 'IBM Plex Sans';
+  font-family: 'DM Serif Text';
   font-size: 70px;
   font-weight: bold;
   line-height: 1;
@@ -61,32 +71,22 @@ h2 {
   position: absolute;
   left: 4vw;
   top: 30vh;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Syne';
   font-size: 50px;
   font-weight: bold;
   line-height: 1;
   margin: 0 0 10px -4px;
   padding-top: 4vh;
-  color: #75B4C2;
-}
-
-img{
-  position: absolute;
-  right: 33px;
-  bottom: -14vh;
-  z-index: -1;
-  max-width: 50%;
-  max-height: 100%;
-}
-img:hover{
-  transform: rotate(-5deg);
+  color: black;
 }
 
 /* HEADER START */
-.header {
+header {
   overflow: hidden;
-  background-color: white;
+  background-color: #B0E3FF;
   padding: 20px 10px;
+  bottom: -4px;
+  position: absolute;
 }
 .header a {
   float: left;
@@ -129,10 +129,11 @@ img:hover{
 
 .about{
   color: black;
+  font-family: Terminal Grotesque;
   font-size: 25px;
-  padding: 17px;
+  padding: 37px;
   text-align: justify;
-  margin: 17px;
+  margin: 37px;
   line-height: 32px;
 }
 
@@ -152,9 +153,12 @@ a.c{
   color: black;
   line-height: 73px;
   padding: 30px;
-  margin-top: 40px;
+  margin-top: 10%;
+  left: 60vw;
 }
-
+.contact a{
+  font-family: DM Serif Text;
+}
 /* start of bars menu */
 
 .overlay {
@@ -207,24 +211,21 @@ a.c{
 }
 
 .flex-container > div {
-  background-color: white;
+  background-color: #FFB340;
   border: solid black;
   border-width: 1px;
   border-radius: 25px;
   margin: 10px;
   padding: 23px;
   padding-top: 16px;
-  font-size: 107%;
-  width: 286px;
+  font-size: 50px;
+  width: 70%;
   height: auto;
+  font-family: Terminal Grotesque;
 }
 b.year {
-  font-size: 141%;
-  text-decoration: underline;
-}
-b.coursenum {
-  color: black;
-  line-height: 30px;
+  font-size: 100px;
+  font-family: Terminal Grotesque Open;
 }
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -336,18 +337,7 @@ b.coursenum {
     position: absolute;
     bottom: 0;
     }
-  img{
-    position: absolute;
-    max-width: 100%;
-    max-height: 63%;
-    left: -40px;
-    bottom: -6%;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -60px;
-  }
+
   .about{
     text-align: left;
   }.contact{
@@ -369,13 +359,13 @@ h1{
 }h2 {
   position: absolute;
   left: 4vw;
-  top: 180px;
-  font-size: 60px;
+  top: 200px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1;
   margin: 0 0 10px -4px;
   padding-top: 0px;
-  color: #75B4C2;
+  color: black;
 }.contact{
   font-size:40px;
   line-height: 50px;
@@ -384,9 +374,7 @@ h1{
 }
 }
 @media screen and (max-height: 400px) and (max-width: 700px){
-  img{
-    display: none;
-  }
+
 }@media screen and (min-width: 700px) and (landscape:portrait){
   header a.h3{
     font-size: 30px
@@ -446,17 +434,7 @@ h1{
       font-size: 54px;
       top: 34%;
     }
-    img{
-     left: 0;
-     bottom: 0;
-     right: 0;
-     margin: 0 auto;
-     max-width: 700px;
-     position: absolute;
-     bottom: 0;
-     left: -40px;
-     bottom: -5%;
-    }
+
   }@media screen and (max-width: 725px) and (min-width: 593px) and (orientation: portrait){
     h1{
       font-size: 89px;
@@ -479,9 +457,7 @@ h1{
       position: absolute;
       bottom: 0;
     }
-    img{
-      bottom: -5%;
-    }
+
   }@media screen and (max-width: 593px) and (min-width: 451px) and (orientation: portrait){
     h1{
       font-size: 90px;
@@ -495,9 +471,6 @@ h1{
       margin: 0px auto;
       max-width: 332px;
       top: 45%;
-    }img{
-      bottom: -81px;
-      max-width: 432px;
     }
   }@media screen and (max-width: 450px) and (orientation: portrait){
     h2{
@@ -512,13 +485,7 @@ h1{
       position: absolute;
       bottom: 0;
     }
-    img{
-      left: -30px; bottom: 0; right: 0;
-      margin: 0 auto;
-      max-width: 400px;
-      position: absolute;
-      bottom: -20px;
-    }
+
   }@media screen and (max-width: 449px) and (orientation: portrait){
     h1{
       font-size: 81px;
@@ -537,16 +504,7 @@ h1{
       position: absolute;
       bottom: 0;
     }
-    img{
-      left: -30px;
-      bottom: 0;
-      right: 0;
-      margin: 0 auto;
-      max-width: 400px;
-      position: absolute;
-      bottom: -20px;
-      top: 440px;
-    }
+ 
   }@media screen and (orientation: portrait) and (max-height:750px) and (max-width: 500px){
     h1{
       top:80px;
@@ -554,9 +512,7 @@ h1{
     h2{
       top: 260px;
     }
-    img{
-      top: 350px;
-    }
+
   }@media screen and (orientation: portrait) and (max-height:670px) and (max-width: 500px){
     h1{
       top: 100px;
@@ -566,20 +522,9 @@ h1{
       font-size: 35px;
       top: 260px;
     }
-    img{
-      top: 285px;
-    } 
-  }@media screen and (min-height: 600px) and (orientation: landscape){
-    img{
-      max-width: 59%;
-      right: -12px;
-    }
-  }@media screen and (max-height: 400px) and (min-width: 700px){
-    img{
-      max-width: 37%;
-      toP: 71px;
-      right: 2px;
-    }
+
+  }
+  
   }@media screen and (max-height: 700px) and (max-width: 550px) and (min-width: 451px) and (orientation: landscape){
     h1{
       font-size: 65px;
@@ -619,3 +564,204 @@ h1{
     top: 580px;
     background-color: #C13584;
   }
+
+  
+  .emoji {
+    -webkit-animation: emoji-jiggle 2s infinite; /* Safari 4+ */
+    -moz-animation:    emoji-jiggle 2s infinite; /* Fx 5+ */
+    -o-animation:      emoji-jiggle 2s infinite; /* Opera 12+ */
+    animation:         emoji-jiggle 2s infinite; /* IE 10+, Fx 29+ */
+  }
+  @keyframes emoji-jiggle {
+    0%   { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .marquee {
+    font-family: 'DM Mono';
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+    background: #173CFF;
+    color: #fff;
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2000vw);
+    }
+  }
+  
+  .marquee span {
+    /*   add linear so it doesn't speed up */
+    animation: moveLeft 400s infinite linear;
+    /* ensures the text stays all on the same line*/
+    white-space: nowrap;
+    display: block;
+    position: relative;
+  }
+
+  .fit{
+    max-height: 260px;
+  }
+  
+  .flex-start{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+  }
+    
+  .draggable.is-dragging { opacity: 0.7; }
+  
+  .draggable{
+   cursor: grab;
+  }
+    
+  #mobile-frame {
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    width: 280px;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: DM Serif Text;
+    line-height: 1.3;
+    margin: 10px 0 20px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 0 0 20px 5px #12ff12;
+    -webkit-animation: change-box-shadow-mobile 8s ease infinite;
+    animation: change-box-shadow-mobile 8s ease infinite;
+  }
+
+  @keyframes change-box-shadow-mobile { 
+      0% {
+        box-shadow: 0 0 12px 2px #ff1312;
+    }
+    25% {
+        box-shadow: 0 0 12px 2px #fbff12;
+    }
+    50% {
+        box-shadow: 0 0 12px 2px #12ff12;
+    }
+    75% {
+        box-shadow: 0 0 12px 2px #1038ff;
+    }
+    95% {
+        box-shadow: 0 0 12px 2px #d010ff;
+    }
+    100% {
+        box-shadow: 0 0 12px 2px #ff1312;
+    }
+  }
+
+  span a{
+    color: white;
+    font-family: DM Mono;
+  }
+
+  .navbar {
+    position: fixed;
+    background-color: #173CFF;
+    bottom: 0px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    font-family: Syne;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    font-weight: 600;
+    font-size:xx-large;
+  }
+
+  #cat {
+    justify-content: center;
+  }
+  #cat:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  * {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: right;
+  border: 1px solid black;
+  background-color: #F1F516;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 40px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Terminal Grotesque;
+}
+
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #FFB340;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #FFB340;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+.smiley:hover {
+  transform: rotate(45deg);
+}
+
+.courses{
+  position: absolute;
+  left:15px;
+}
