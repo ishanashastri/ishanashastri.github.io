@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:#FFD2D2;">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>about!</title>
-        <link rel="stylesheet" type="text/css" href="/style/css/style.css">
-        <link rel="shortcut icon" type="image/icon" href="/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="./style/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -19,61 +22,61 @@
     </head>
 
     <body>
-        <!-- Navigation menu -->
-        <div class="header">
-            <span class="fa fa-bars b" id="cr"></span>
-            <a href="#default" class=h3>about</a>
-            <div class="header-right">
-                <a href="/index.html">ishana</a>
-                <a class="active" href="/about.html">about</a>
-                <a href="/courses.html">courses</a>
-                <a href="/projects.html">projects</a>
-                <a href="/resume.pdf">resume</a>
-                <a href="/contact.html">contact</a>
-              </div>
-        </div>
-
-        <!-- Mobile Navigation menu -->
-        <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" id="cb" class="closebtn">×</a>
-        <div class="overlay-content">
-            <a href="/index.html">ishana</a>
-            <a class="active" href="/about.html">about</a>
-            <a href="/courses.html">courses</a>
-            <a href="/projects.html">projects</a>
-            <a href="/resume.pdf">resume</a>
-            <a href="/contact.html">contact</a>
-            </div>
-        </div>
-
         <div class="about"> 
-            I am a rising sophomore at the Massachusetts Institute of Technology, with an intended double major in
-            computer science and mathematics.<br>
+            I am a sophomore at the <span class="squiggly"><a href="https://mit.edu">Massachusetts Institute of Technology</a></span> double majoring in
+            computer science and applied mathematics.<br>
             <br>
-            A 2019 graduate from Poolesville High School's Science, Math, and Computer Science magnet program,
-            I am interested in applying computer science to solve global issues, with a recent focus on machine
-            learning research. I am currently working on <b>theoretical machine learning</b> at MIT's Center for Brains,
-            Minds, and Machines. I have previously worked on <b>unsupervised 3D mesh segmentation</b> at IBM Research, 
-            high-throughput omics for <b>cardiovascular disease progression</b> at Fondazione Bruno Kessler in Trento,
-            Italy, and the <b>detection of tumors</b> in mammograms at the George Washington University in Washington, 
-            D.C. In the future, I hope to expand my scope of work to include <b>robotics and energy.</b> <br>
+            I am passionate about applying computer science to solve global issues, with a recent focus on machine
+            learning research. I am currently investigating the <span class="squiggly"><a href="https://cbmm.mit.edu/research/modules/visual-stream">stability 
+            of of deep networks at MIT's Center for Brains, Minds, and Machines.</a></span> I have previously worked 
+            on unsupervised 3D mesh segmentation at IBM Research, high-throughput omics for cardiovascular disease 
+            progression at Fondazione Bruno Kessler in Trento, Italy, and the detection of tumors in mammograms at the 
+            George Washington University in Washington, D.C. In the future, I hope to expand my scope of work to include robotics and energy. <br>
             <br>
-            Outside of academics, I am interested in investigating the intersection of <b>art, media, and technology</b> through 
-            mediums such as <b>graphic design, UI/UX, and fashion.</b> At MIT, I am currently involved with Women Business Leaders, 
-            Machine Intelligence Community, StartLabs, Infinite Fashion Magazine, and the Mirchi and MissBehavior dance
-            teams. I’m also an avid reader, classically trained pianist, and lover of learning.<br>
-            <br> 
-            Check out my other pages to see out what I've been up to recently.    
+            Outside of academics, I am interested in investigating the intersection of art, media, and technology through 
+            mediums such as graphic design, UI/UX, and fashion. At MIT, I am currently the Co-President of Women Business Leaders (WBL), 
+            Co-Director of AI@MIT's Generator Competition, Vice Chair of the UA Diversity Council, and a Sourcing Principal at Harvard
+            Undergraduate Capital Partners. I'm also involved with the Asian American Initiative and the Mirchi and MissBehavior dance teams.
+            In my (quite limited) free time, you can catch me reading, playing classical piano, making zines, or learning a new hobby.<br>
+            <br>
+            Feel free to hit me up if you're interested in working together, have questions, or just want to grab a coffee.<br> 
+            <br>
+            - ishana ٩(◕‿◕｡)۶	
         </div>
 
-        <script type="text/javascript">document.getElementById("cr").onclick = function() {openNav()};
-            function openNav() {
-                document.getElementById("myNav").style.width= "100%";
-            }
-            document.getElementById("cb").onclick = function() {closeNav()};
-            function closeNav() {
-                document.getElementById("myNav").style.width= "0%";
-            }
+        <div class="navbar">
+            <a class="active" href="/index.html">HOME</a>
+            <a href="/about.html">ABOUT</a>
+            <a href="/portfolio.html">PORTFOLIO</a>
+            <a href="/courses.html">COURSES</a>
+            <a href="/contact.html">CONTACT</a>
+        </div>
+        <!-- Animated favicon -->
+        <script>
+            var favicon_images = [
+                    'images/yellow.png',
+                    'images/blue.png',
+                    'images/pink.png',
+                    'images/green.png',
+                    'images/orange.png',
+                ],
+            image_counter = 0; // To keep track of the current image
+
+            setInterval(function() {
+                // remove current favicon
+                if(document.querySelector("link[rel='icon']") !== null)
+                    document.querySelector("link[rel='icon']").remove();
+                if(document.querySelector("link[rel='shortcut icon']") !== null)
+                    document.querySelector("link[rel='shortcut icon']").remove();
+                    
+                // add new favicon image
+                document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/gif">');
+
+                if(image_counter == favicon_images.length -1)
+                    image_counter = 0;
+                else
+                    image_counter++;
+            }, 500);
         </script>
     </body>
 </html>
