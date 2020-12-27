@@ -24,7 +24,7 @@
 
     <body>     
         <br>     
-        <img class="courses" id="imgClick" src="f20.svg"  usemap="#workmap" alt="Fall 2020 Courses">
+        <img class="courses" id="imgClick" src="/images/f20.svg"  usemap="#workmap" alt="Fall 2020 Courses">
         <map name="workmap">
             <area shape="rect" coords="750,40,810,140" alt="Fall 2020 Courses" onClick="changeImage('f20')">
             <area shape="rect" coords="750,150,810,250" alt="Spring 2020 Courses" onClick="changeImage('s20')">> 
@@ -43,13 +43,13 @@
         <script>
             function changeImage(year) {
                 if (year=="f20"){
-                    document.getElementById("imgClick").src = "f20.svg";
+                    document.getElementById("imgClick").src = "/images/f20.svg";
                 }
                 else if (year=="s20"){
-                    document.getElementById("imgClick").src = "s20.svg";
+                    document.getElementById("imgClick").src = "/images/s20.svg";
                 }
                 else{
-                    document.getElementById("imgClick").src = "f19.svg";
+                    document.getElementById("imgClick").src = "/images/f19.svg";
                 }
             }
         </script>

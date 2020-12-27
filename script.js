@@ -8,23 +8,15 @@ for ( var i=0, len = draggableElems.length; i < len; i++ ) {
   draggies.push( draggie );
 }
 
-function makeMarquee1() {
-  const title = 'coding'
+function makeMarquee() {
+  const title = '<a href="mailto:ishana@mit.edu"> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/envelope_2709-fe0f.png" width="20px" alt="mail emoji">  email &emsp; </a> <a href="https://github.com/ishanashastri/"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/laptop_1f4bb.png" width="20px" alt="computer emoji"> github &emsp;</a> <a href="https://www.linkedin.com/in/ishanashastri/"> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/handshake_1f91d.png" width="20px" alt="handshake emoji"> linkedin &emsp;</a>  <a href="https://open.spotify.com/user/sais9942?si=JPCABAobSZWRm9mzjcyE9Q"> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/musical-note_1f3b5.png" width="20px" alt="music note emoji"> spotify</a>'
 
-  const marqueeText = new Array(300).fill(title).join('&emsp;')
+  const marqueeText = new Array(300).fill(title).join('&emsp;     ')
   const marquee = document.querySelector('.marquee span')
   marquee.innerHTML = marqueeText
 }
 
-function makeMarquee2() {
-  const title = 'bookworm'
-
-  const marqueeText = new Array(300).fill(title).join('&emsp;')
-  const marquee = document.querySelector('.marquee2 span')
-  marquee.innerHTML = marqueeText
-}
-makeMarquee1()
-makeMarquee2()
+makeMarquee()
 
 
 function randomizePosition(){
