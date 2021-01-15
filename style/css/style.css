@@ -15,18 +15,35 @@ area {
 
 /* TERMINAL GROTESQUE */
 @font-face {
+  font-family: "Terminal Grotesque Open";
+  src: url("/style/fonts/TerminalGrotesque-Open.woff2") format("woff2"),
+    url("/style/fonts/TerminalGrotesque-Open.woff") format("woff"),
+    url("/style/fonts/TerminalGrotesque-Open.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: url("/style/fonts/Terminal-Grotesque.woff2") format("woff2"),
+    url("/style/fonts/Terminal-Grotesque.woff") format("woff"),
+    url("/style/fonts/Terminal-Grotesque.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* @font-face {
   font-family: "Terminal Grotesque";
   font-weight: bold;
   src: url("/style/fonts/terminal-grotesque.ttf") format("ttf");
+  
 }
 
-/* TERMINAL GROTESQUE OPEN */
+TERMINAL GROTESQUE OPEN
 @font-face {
   font-family: "Terminal Grotesque Open";
   font-weight: bold;
   src: url("/style/fonts/terminal-grotesque_open.otf") format("otf");
 }
-
+*/
 body {
   margin: 0;
   overflow-x: hidden;
@@ -162,7 +179,7 @@ h2 {
 }
 b.year {
   font-size: 5vw;
-  font-family: Terminal Grotesque Open;
+  font-family: DM Serif Display;
 }
 @media screen and (max-height: 450px) {
   .overlay a {
@@ -335,9 +352,9 @@ b.year {
   }
   .about {
     margin: 1vw;
-    font-size: 4vw;
+    font-size: 4.5vw;
     line-height: 6vw;
-    text-align: left;
+    text-align: justify;
   }
 }
 @media screen and (max-width: 320px) and (orientation: portrait) {
@@ -871,8 +888,18 @@ span a {
   b.year {
     font-size: 50px;
   }
+  .emoji-img {
+    top: 40vh;
+    right: 0px;
+    width: 100%;
+    /* right: -100px; */
+  }
   .memoji {
-    width: 250px;
+    /* width: 250px; */
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -885,7 +912,7 @@ span a {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 701px) {
   .emoji-img {
     top: 150px;
     right: -100px;
@@ -901,17 +928,13 @@ span a {
   }
 }
 @media screen and (max-width: 700px) and (min-width: 501px) {
-  .emoji-img {
-    top: 230px;
-    right: 8%;
-    margin-right: 0px;
-  }
-  .memoji {
+  /* .memoji {
     width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
+
   .home-name {
     text-align: center;
   }
