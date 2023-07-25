@@ -128,6 +128,11 @@ a:hover {
   font-family: 'Arial Narrow';
   line-height: .5rem;
   overflow-y: scroll;
+  overflow: hidden;
+}
+
+menu::-webkit-scrollbar{
+  display: none;
 }
 
 .menu-head {
@@ -145,6 +150,10 @@ a:hover {
   padding-left: 0.625em;
   overflow-y: scroll;
   font-family: 'Arial Narrow';
+}
+
+.description {
+  width: 60%;
 }
 
 hr {
