@@ -143,6 +143,8 @@ a:hover {
   height: 100vh;
   flex: 4 1 0;
   padding-left: 0.625em;
+  overflow-y: scroll;
+  font-family: 'Arial Narrow';
 }
 
 hr {
