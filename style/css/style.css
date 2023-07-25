@@ -128,7 +128,6 @@ a:hover {
   font-family: 'Arial Narrow';
   line-height: .5rem;
   overflow-y: scroll;
-  overflow: hidden;
 }
 
 menu::-webkit-scrollbar{
