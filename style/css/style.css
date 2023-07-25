@@ -33,16 +33,28 @@ html {
   src: url("/style/fonts/PerpetuaTitlingMTLight2.ttf") format("ttf");
 }
 
+/* ROCK 3D */
+@font-face {
+  font-family: "Rock 3D";
+  src: url("/style/fonts/Rock3D-Regular.ttf") format("ttf");
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
   /* overflow-y: hidden;  */
+  display:flex;
 }
 a {
   color: black;
   font-family: "Syne, sans-serif";
   font-weight: normal;
   text-decoration: none;
+}
+
+a.project {
+  font-family: 'Arial Narrow';
+  padding-left: 0.625rem;
 }
 
 /* Hello */
@@ -60,9 +72,9 @@ h1 {
 fancy-text {
   font-family: "Petit Formal Script";
 }
+
 a:hover {
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  cursor: url(../../images/grab.png), auto;
 }
 
 /* CONTACT PAGE */
@@ -90,6 +102,55 @@ a:hover {
   cursor: url("/images/grab.png"), auto;
 }
 
+/* BASE PORTFOLIO PAGE */
+.wrap {
+  display:flex;
+  background-image: none;
+  width:100%;
+  overflow: hidden;
+}
+
+.menu{
+  height: 100vh;
+  flex: 3 1 0;
+  max-width: 275px;
+  min-width: 175px;
+  padding-right: 0.625em;
+  /* width: 250px; */
+  overflow:auto;
+  background-color: white;
+  background-image: none;
+  border-right-style: solid;
+  border-right-width: 1.5px;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  font-family: 'Arial Narrow';
+  line-height: .5rem;
+  overflow-y: scroll;
+}
+
+.menu-head {
+  font-family: 'Rock 3D';
+  font-size: 28px;
+  padding-left: 0.625rem;
+}
+
+.content {
+  background-color: white;
+  background-image: none;
+  /* width: 70vw; */
+  height: 100vh;
+  flex: 4 1 0;
+  padding-left: 0.625em;
+}
+
+hr {
+  background: rgba(0, 0, 0, 1);
+  border: 0;
+  height: 1px;
+  display: block;
+}
 /* RESIZING */
 @media screen and (max-width: 200px)  {
   h1 {
