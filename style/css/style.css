@@ -339,16 +339,23 @@ menu::-webkit-scrollbar{
   width: 76%;
 }
 
-.hide-me {
+.cyber-disp {
   display: none;
   background-image: url('../../images/cybernetics/release.gif');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   left: 50%;
   top: 50%
 }
 
-.cyber:hover + .hide-me {
+p.cyber:hover + .cyber-disp {
   display: block;
+}
+
+p.cyber:hover + .catdance {
+  display:none;
 }
 
 hr {
