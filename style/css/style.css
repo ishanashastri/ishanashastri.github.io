@@ -349,6 +349,14 @@ menu::-webkit-scrollbar{
   width: calc(90% / 3);
   padding: 1.5%;
   /* max-height: 5%; */
+  overflow: hidden;
+  height: 20%;
+}
+
+.columns > a > img {
+  width:100%;
+  height:500px;
+  justify-content: center;
 }
 
 .haath-disp {
