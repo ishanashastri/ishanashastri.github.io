@@ -57,6 +57,25 @@ a.project {
   padding-left: 0.625rem;
 }
 
+img.spinning-smile {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+img.spinning-smile:hover {
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+img.inverted:hover {
+  filter: invert(1);
+}
+
+.video-container {
+  width: 76%;
+  height: 42.75vw;
+}
+
 /* Hello */
 h1 {
   position: absolute;
