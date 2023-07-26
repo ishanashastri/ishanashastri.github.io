@@ -339,17 +339,29 @@ menu::-webkit-scrollbar{
   width: 76%;
 }
 
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.columns > * {
+  width: calc(90% / 3);
+  padding: 1.5%;
+  /* max-height: 5%; */
+}
+
 .haath-disp {
-  display: none;
+  /* display: none; */
   background-image: url('../../images/haath/preview.gif');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 30vw;
+  /* left: 30vw;
   top: 10vh;
-  width: 68%;
-  height: 82%;
+  width: 68%; */
+  height: 50%; 
   z-index: 30;
 }
 p.haath:hover + .haath-disp {
@@ -357,16 +369,16 @@ p.haath:hover + .haath-disp {
 }
 
 .cyber-disp {
-  display: none;
+  /* display: none; */
   background-image: url('../../images/cybernetics/release.gif');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 30vw;
+  /* left: 30vw;
   top: 10vh;
-  width: 68%;
-  height: 82%;
+  width: 68%;*/
+  height: 50%; 
   z-index: 30;
 }
 p.cyber:hover + .cyber-disp {
@@ -374,16 +386,16 @@ p.cyber:hover + .cyber-disp {
 }
 
 .aai-disp {
-  display: none;
-  background-image: url('../../images/aai/preview.gif');
+  /* display: none; */
+  background-image: url('../../images/aai/preview2.gif');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 30vw;
-  top: 10vh;
-  width: 68%;
-  height: 82%;
+  /* left: 30vw;
+  top: 10vh; */
+  /* width: 68%; */
+  height: 50%;
   z-index: 30;
 }
 p.aai:hover + .aai-disp {
