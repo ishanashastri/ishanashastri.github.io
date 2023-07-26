@@ -339,6 +339,23 @@ menu::-webkit-scrollbar{
   width: 76%;
 }
 
+.haath-disp {
+  display: none;
+  background-image: url('../../images/haath/preview.gif');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30vw;
+  top: 50vh;
+  width: 68%;
+  height: 46%;
+  z-index: 30;
+}
+p.haath:hover + .haath-disp {
+  display: block;
+}
+
 .cyber-disp {
   display: none;
   background-image: url('../../images/cybernetics/release.gif');
@@ -349,17 +366,12 @@ menu::-webkit-scrollbar{
   left: 30vw;
   top: 50vh;
   width: 68%;
-  height: 36%;
+  height: 46%;
   z-index: 30;
 }
 p.cyber:hover + .cyber-disp {
   display: block;
 }
-
-p.cyber:hover ~ .catdance {
-  display:none;
-}
-
 hr {
   background: rgba(0, 0, 0, 1);
   border: 0;
