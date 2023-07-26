@@ -1,6 +1,5 @@
 html {
   background-color: white;
-  font-family: "DM Serif Text";
   color: black;
   margin: 0;
   max-height: 100vh;
@@ -45,6 +44,172 @@ body {
   /* overflow-y: hidden;  */
   display:flex;
 }
+
+/* HOME PAGE */
+.paint {
+  background-image: url("../../images/paint.jpg");
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  width: 50%;
+  height: 50%;
+}
+
+.money {
+  background-image: url("../../images/money-removebg-preview.png");
+  background-position: 100% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index:100;
+  width: 40%;
+  height: 32%;
+}
+
+.moon {
+  background-image: url("../../images/maninmoon.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -12%;
+  top: -5%;
+  z-index:120;
+  width: 36%;
+  height: 36%;
+}
+
+.sticker {
+  background-image: url("../../images/90s_2.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40%;
+  top: 4%;
+  z-index:400;
+  width: 20%;
+  height: 20%;
+}
+
+.angel {
+  background-image: url("../../images/ditherangel.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 35%;
+  top: -8%;
+  z-index:109;
+  width: 70%;
+  height: 70%;
+}
+
+.india {
+  background-image: url("../../images/indianpainting.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -25%;
+  top: 9%;
+  z-index:0;
+  width: 50%;
+  height: 50%;
+}
+
+.frog {
+  background-image: url("../../images/froggay.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  z-index:0;
+  width: 32%;
+  height: 32%;
+}
+
+.computer {
+  background-image: url("../../images/codingthing.png");
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index:0;
+  width: 50%;
+  height: 50%;
+}
+
+.camera {
+  background-image: url("../../images/cameragirl.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+  z-index:200;
+  width: 70%;
+  height: 70%;
+}
+
+.certified {
+  background-image: url("../../images/certifiedbackwards.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -5%;
+  bottom: 0%;
+  z-index:400;
+  width: 27%;
+  height: 27%;
+}
+
+.certified:hover{
+  filter: invert(1);
+}
+
+.download {
+  background-image: url("../../images/downloadnow.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32%;
+  bottom: -3%;
+  z-index:0;
+  width: 30%;
+  height: 30%;
+}
+
+.namelogo {
+  background-image: url("../../images/namelogo.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+  z-index:400;
+  width: 55%;
+  height: 55%;
+}
+
+.namelogo:hover {
+  filter: invert(1);
+}
+/*  */
 a {
   color: black;
   font-family: "Syne, sans-serif";
