@@ -348,8 +348,8 @@ menu::-webkit-scrollbar{
   position: absolute;
   left: 30vw;
   top: 10vh;
-  width: 82%;
-  height: 46%;
+  width: 68%;
+  height: 82%;
   z-index: 30;
 }
 p.haath:hover + .haath-disp {
@@ -382,8 +382,8 @@ p.cyber:hover + .cyber-disp {
   position: absolute;
   left: 30vw;
   top: 10vh;
-  width: 82%;
-  height: 46%;
+  width: 68%;
+  height: 82%;
   z-index: 30;
 }
 p.aai:hover + .aai-disp {
