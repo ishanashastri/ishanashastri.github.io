@@ -355,10 +355,16 @@ menu::-webkit-scrollbar{
 
 .columns > a > img {
   width:100%;
-  height:500px;
+  height:100%;
   justify-content: center;
 }
 
+@media (max-width: 500px) {
+  /* Full width on smaller screens */
+  .columns > * {
+  width: 100%;
+}
+}
 .haath-disp {
   /* display: none; */
   background-image: url('../../images/haath/preview.gif');
