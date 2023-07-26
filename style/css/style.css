@@ -347,8 +347,8 @@ menu::-webkit-scrollbar{
   background-repeat: no-repeat;
   position: absolute;
   left: 30vw;
-  top: 50vh;
-  width: 68%;
+  top: 10vh;
+  width: 82%;
   height: 46%;
   z-index: 30;
 }
@@ -364,14 +364,32 @@ p.haath:hover + .haath-disp {
   background-repeat: no-repeat;
   position: absolute;
   left: 30vw;
-  top: 50vh;
+  top: 10vh;
   width: 68%;
-  height: 46%;
+  height: 82%;
   z-index: 30;
 }
 p.cyber:hover + .cyber-disp {
   display: block;
 }
+
+.aai-disp {
+  display: none;
+  background-image: url('../../images/aai/preview.gif');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 30vw;
+  top: 10vh;
+  width: 82%;
+  height: 46%;
+  z-index: 30;
+}
+p.aai:hover + .aai-disp {
+  display: block;
+}
+
 hr {
   background: rgba(0, 0, 0, 1);
   border: 0;

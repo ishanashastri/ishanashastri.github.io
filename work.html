@@ -14,6 +14,15 @@
                 $("#templateMenu").load("/template.html"); 
             });
         </script> 
+        <script>
+            var elem = document.getElementsByName("p");
+            var title = document.getElementsByClassName('content');
+            for (e in elem) {
+                if (elem.matches(':hover')) {
+                    title.remove();
+                }
+            }
+        </script>
     </head>
 
     <body>
