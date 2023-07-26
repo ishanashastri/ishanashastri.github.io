@@ -359,6 +359,9 @@ menu::-webkit-scrollbar{
   justify-content: center;
 }
 
+.columns > a > img:hover {
+  filter: invert(1);
+}
 @media (max-width: 500px) {
   /* Full width on smaller screens */
   .columns > * {
