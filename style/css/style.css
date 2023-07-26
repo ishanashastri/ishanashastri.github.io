@@ -347,7 +347,8 @@ menu::-webkit-scrollbar{
   background-repeat: no-repeat;
   position: absolute;
   left: 50%;
-  top: 50%
+  top: 50%;
+  width: 50%;
 }
 
 p.cyber:hover + .cyber-disp {
