@@ -334,7 +334,9 @@ menu::-webkit-scrollbar{
   overflow-y: scroll;
   font-family: 'Arial Narrow';
 }
-
+h2 {
+font-size: 2.5em;
+}
 .description {
   width: 76%;
 }
