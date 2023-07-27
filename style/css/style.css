@@ -330,7 +330,7 @@ menu::-webkit-scrollbar{
   /* width: 70vw; */
   height: 100vh;
   flex: 4 1 0;
-  padding-left: 0.625em;
+  padding-left: 1.5%;
   overflow-y: scroll;
   font-family: 'Arial Narrow';
 }
