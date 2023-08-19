@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ishana shastri!</title>
         <link rel="canonical" href="./">
-        <link rel="stylesheet" type="text/css" href="./style/css/style.css" />
-    <link rel="icon" type="image/gif" href="images/memoji.gif" />
+        <link rel="stylesheet" type="text/css" href=".//style/css/style.css" />
+    <link rel="icon" type="image/gif" href="images/fig.png" />
     <link
       href="https://fonts.googleapis.com/css?family=DM Serif Text"
       rel="stylesheet"
@@ -47,55 +47,39 @@
       gtag("config", "UA-169621093-1");
     </script>
     <script src="./script.js" defer></script>
+    <script>
+      function randomlyDeleteElement()
+      {
+        var item = Math.random() < 0.5 ? 1 : 2;
+        var query = "div.pic.pic" + item.toString();
+        const element = document.querySelector(query);
+        element.remove();
+      }
+    </script>
   </head>
 
   <body>
-    <div class="paint"></div>
-    <div class="money"></div>
-    <div class="moon"></div>
-    <div class="angel"></div>
-    <div class="india"></div>
-    <div class="frog"></div>
-    <div class="computer"></div>
-    <div class="camera"></div>
-    <div class="download"></div>
-    <div class="sticker"></div>
-
-    <a href="./contact"><div class="certified"></div></a>
-    <a href="./work"><div class="namelogo"></div></a>
-
-    <!-- Animated favicon -->
-    <script>
-      var favicon_images = [
-          "/images/yellow.png",
-          "/images/blue.png",
-          "/images/pink.png",
-          "/images/green.png",
-          "/images/orange.png",
-        ],
-        image_counter = 0; // To keep track of the current image
-
-      setInterval(function () {
-        // remove current favicon
-        if (document.querySelector("link[rel='icon']") !== null)
-          document.querySelector("link[rel='icon']").remove();
-        if (document.querySelector("link[rel='shortcut icon']") !== null)
-          document.querySelector("link[rel='shortcut icon']").remove();
-
-        // add new favicon image
-        document
-          .querySelector("head")
-          .insertAdjacentHTML(
-            "beforeend",
-            '<link rel="icon" href="' +
-              favicon_images[image_counter] +
-              '" type="image/gif">'
-          );
-
-        if (image_counter == favicon_images.length - 1) image_counter = 0;
-        else image_counter++;
-      }, 500);
-    </script>
-
+    <div class="header">
+      <div><h1 class="first">Ishana*</h1></div>
+      <div><h1 class="second">Shastri</h1></div>
+    </div>
+    
+    <div class="pic pic1"></div>
+    <div class="pic pic2"></div>
+    <script>randomlyDeleteElement()</script>
+    <h2 class="description">*Ishana is a Master’s student at MIT currently studying bias and fairness
+    in LLMs. She has previously worked at MosaicML and Google X’s Wing. Vaguely
+    interested in robustness and fairness in ML as well as memoirs, <a href="https://ishana.world">eccentric 
+    design</a>, freestyle dance, and mid-length independent films, Ishana is into 
+    being into things.
+    <br>
+    <br>
+    /&emsp;<a href="mailto:ishana@mit.edu">Email</a>&emsp;
+    /&emsp;<a href="https://github.com/ishanashastri">Github</a>&emsp;
+    <div class="break">/<br></div>
+    /&emsp;<a href="https://www.linkedin.com/ishanashastri">Linkedin</a>&emsp;
+    /&emsp;<a href="https://open.spotify.com/user/sais9942">Spotify</a>&emsp;/
+    <div class="break"><br></div>
+  </h2>
   </body>
 </html>
