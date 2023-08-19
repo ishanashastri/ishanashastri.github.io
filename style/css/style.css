@@ -112,10 +112,16 @@ font-weight: 100;
     background-repeat: no-repeat;
     position: absolute;
     width: 100vw;
-    top: 18vh;
     margin: auto;
   }
 
+  .pic1 {
+    top: 22vh;
+  }
+
+  .pic2 {
+    top: 18vh;
+  }
   .description {
     position: absolute;
     top: 83vh;
