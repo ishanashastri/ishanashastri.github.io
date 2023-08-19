@@ -10,13 +10,19 @@ html {
 /* ABC Diatype */
 @font-face {
   font-family: "ABC Diatype";
-  src: url("../fonts/abc-diatype-bold.otf") format("otf");
-}
+  src: url("../fonts/webfontkit/abc-diatype-bold-webfont.woff") format("woff"),
+  url("../fonts/webfontkit/abc-diatype-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  }
 
 /* Arial Narrow */
 @font-face {
   font-family: "Arial Narrow";
-  src: url("../fonts/arial-narrow.TTF") format("ttf");
+  src: url("../fonts/webfontkit/arial-narrow-webfont.woff") format("woff"),
+  url("../fonts/webfontkit/arial-narrow-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -106,7 +112,7 @@ font-weight: 100;
     background-repeat: no-repeat;
     position: absolute;
     width: 100vw;
-    top: 15vh;
+    top: 18vh;
     margin: auto;
   }
 
