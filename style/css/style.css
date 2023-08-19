@@ -7,40 +7,16 @@ html {
   cursor: url(../../images/pointer.png), auto;
 }
 
-/* TERMINAL GROTESQUE */
-@font-face {
-  font-family: "Terminal Grotesque Open";
-  src: url("/style/fonts/TerminalGrotesque-Open.woff2") format("woff2"),
-    url("/style/fonts/TerminalGrotesque-Open.woff") format("woff"),
-    url("/style/fonts/TerminalGrotesque-Open.ttf") format("truetype");
-  font-weight: bold;
-}
-
-/* PETIT FORMAL */
-@font-face {
-  font-family: "Petit Formal Script";
-  src: url("/style/fonts/petitformalscript-regular-webfont.woff") format("woff"),
-    url("/style/fonts/petitformalscript-regular-webfont.woff") format("woff"),
-    url("/style/fonts/PetitFormalScript-Regular.ttf") format("ttf");
-  font-weight: bold;
-}
-
-/* PERPETUA TITLING MT*/
-@font-face {
-  font-family: "Perpetua Titling MT";
-  src: url("/style/fonts/PerpetuaTitlingMTLight2.ttf") format("ttf");
-}
-
-/* ROCK 3D */
-@font-face {
-  font-family: "Rock 3D";
-  src: url("/style/fonts/Rock3D-Regular.ttf") format("ttf");
-}
-
 /* ABC Diatype */
 @font-face {
   font-family: "ABC Diatype";
-  src: url("/style/fonts/abc-diatype-bold.otf") format("otf");
+  src: url("../fonts/abc-diatype-bold.otf") format("otf");
+}
+
+/* Arial Narrow */
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../fonts/arial-narrow.TTF") format("ttf");
 }
 
 body {
@@ -130,7 +106,7 @@ font-weight: 100;
     background-repeat: no-repeat;
     position: absolute;
     width: 100vw;
-    top: 13vh;
+    top: 15vh;
     margin: auto;
   }
 
