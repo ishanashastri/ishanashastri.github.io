@@ -98,6 +98,10 @@ font-weight: 100;
   background-image: url("../../images/fig.png");
 }
 
+.pic3 {
+  background-image: url("../../images/lotus.png");
+}
+
 .break {
   display: none;
 }
@@ -122,6 +126,11 @@ font-weight: 100;
   .pic2 {
     top: 18vh;
   }
+
+  .pic3 {
+    top: 18vh;
+  }
+  
   .description {
     position: absolute;
     top: 83vh;

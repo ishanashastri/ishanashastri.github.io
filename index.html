@@ -30,10 +30,14 @@
     <script>
       function randomlyDeleteElement()
       {
-        var item = Math.random() < 0.5 ? 1 : 2;
-        var query = "div.pic.pic" + item.toString();
+        let random = Math.random();
+        var item = random < 0.3 ? [1,2] : ((random < 0.6)) ? [1,3] : [2,3];
+        var query = "div.pic.pic" + item[0].toString();
+        var query2 = "div.pic.pic" + item[1].toString();
         const element = document.querySelector(query);
+        const element2 = document.querySelector(query2);
         element.remove();
+        element2.remove();
       }
     </script>
   </head>
@@ -46,12 +50,14 @@
     
     <div class="pic pic1"></div>
     <div class="pic pic2"></div>
+    <div class="pic pic3"></div>
     <script>randomlyDeleteElement()</script>
-    <h2 class="description">*Ishana is a Master’s student at MIT currently studying bias and fairness
-    in LLMs. She has previously worked at MosaicML and Google X’s Wing. Vaguely
-    interested in robustness and fairness in ML as well as memoirs, <a href="https://ishana.world">eccentric 
-    design</a>, freestyle dance, and mid-length independent films, Ishana is into 
-    being into things.
+    <h2 class="description">*Ishana is currently romping around Madrid working on 
+    connected vehicle ecosystems. She just completed her Master's from MIT studying the opportunities 
+    and challenges of LLMs to provide transparency in the judicial system. She has previously worked at 
+    MosaicML and Google X’s Wing. Vaguely interested in robustness and fairness in ML as well as memoirs, 
+    <a href="https://ishana.world">eccentric design</a>, freestyle dance, and mid-length independent films,
+    Ishana is into being into things.
     <br>
     <br>
     /&emsp;<a href="mailto:ishana@mit.edu">Email</a>&emsp;
