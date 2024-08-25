@@ -50,6 +50,7 @@ h1 {
   right: 0%;
   top: 10%;
   font-family: "ABC Diatype";
+  font-weight: normal;
   font-size: 80px;
   line-height: 1.4;
   margin: 0 0 10px -4px;
@@ -99,7 +100,8 @@ font-weight: 100;
 }
 
 .pic3 {
-  background-image: url("../../images/lotus.png");
+    background-image: url("../../images/lotus.png");
+    /* width: 22%; */
 }
 
 .break {
